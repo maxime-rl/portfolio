@@ -8,7 +8,10 @@ export class HomePage extends LitElement {
   render() {
     return html`
       <navbar-component></navbar-component>
-      <featured-projects></featured-projects>
+      <main>
+        <featured-projects></featured-projects>
+      </main>
+      <footer-component></footer-component>
     `;
   }
 }
