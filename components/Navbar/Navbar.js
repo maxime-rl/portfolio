@@ -21,7 +21,6 @@ export default class Nav extends LitElement {
   }
 
   render() {
-    console.log(html);
     return html`
       <nav class="navbar">
         <div class="navbar__wrapper page-width">
