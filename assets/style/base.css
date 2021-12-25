@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: var(--spacing-5);
+  font-family: var(--font-family);
+  font-size: var(--font-size-2);
+  color: var(--color-dark);
+  background: var(--bg-primary-lighten);
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--spacing-10);
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+}
