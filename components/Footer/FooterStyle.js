@@ -10,25 +10,15 @@ export const componentStyle = css`
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .footer__logo {
-    object-fit: contain;
-    width: 4rem;
+    background: var(--bg-dark);
   }
 
   .footer__description {
     margin: 0;
-    gap: var(--spacing-3);
     font-weight: 500;
     font-style: normal;
     font-size: 0.7rem;
     line-height: 0;
-  }
-
-  @media (width >= 75rem) {
-    .footer__description {
-      gap: var(--spacing-4);
-    }
+    color: var(--bg-white);
   }
 `;

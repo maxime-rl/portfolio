@@ -25,7 +25,7 @@ export default class Nav extends LitElement {
       <nav class="navbar">
         <div class="navbar__wrapper page-width">
           <img
-            class="navbar__logo"
+            class="site__logo"
             src="./images/logos/blue-logo.svg"
             alt="logo du site de Maxime Robil-Leprêtre"
           />
