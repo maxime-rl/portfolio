@@ -120,14 +120,14 @@ export const componentStyle = css`
 
   .project-card__icon--preview {
     position: relative;
-    background-image: url(../../assets/images/icons/preview-card.svg);
+    background-image: url(./images/icons/preview-card.svg);
     background-size: 20px;
     width: 20px;
     height: 20px;
   }
 
   .project-card__icon--github {
-    background-image: url(../../assets/images/icons/github-card.svg);
+    background-image: url(./images/icons/github-card.svg);
     background-size: 15px;
     width: 15px;
     height: 20px;

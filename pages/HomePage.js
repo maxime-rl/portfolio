@@ -14,7 +14,7 @@ export class HomePage extends LitElement {
       <header class="page-width">
         <banner-component>
           <h1 class="banner-component__title">Bienvenue je suis Maxime, Développeur Frontend & Webdesigner</h1>
-          <img class="banner-component__img" src="./assets/images/profile-photo.jpg" alt="photo de profil"></img>
+          <img class="banner-component__img" src="./images/profile-photo.jpg" alt="photo de profil"></img>
         </banner-component>
       </header>
       <main>
