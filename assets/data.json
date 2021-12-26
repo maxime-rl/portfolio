@@ -134,14 +134,14 @@
     },
     {
       "id": "Bya222XJa4",
-      "name": "Ohmyfood",
-      "date": "2021-02-23",
-      "tags": ["Frontend", "Sass", "Animation"],
+      "name": "Reservia",
+      "date": "2021-02-05",
+      "tags": ["Frontend", "Intégration", "Html", "Css"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "thumbnail": "ohmyfood-project.jpg",
+      "thumbnail": "reservia-project.jpg",
       "links": {
-        "github": "https://github.com/maxime-rl/MaximeRobilLepretre_3_26012021",
-        "preview": "https://maxime-rl.github.io/MaximeRobilLepretre_3_26012021/"
+        "github": "https://github.com/maxime-rl/MaximeRobilLepretre_2_15012021",
+        "preview": "https://maxime-rl.github.io/MaximeRobilLepretre_2_15012021/"
       }
     },
     {
@@ -214,7 +214,7 @@
         "After Effects"
       ],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "thumbnail": "Rock&Sun-project.jpg",
+      "thumbnail": "rock-Sun-project.jpg",
       "links": {
         "github": "",
         "preview": ""
@@ -227,18 +227,6 @@
       "tags": ["Webdesign", "Photoshop", "Illustrator"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "burdigala-project.jpg",
-      "links": {
-        "github": "",
-        "preview": ""
-      }
-    },
-    {
-      "id": "3P5Vzh6ZSs",
-      "name": "Photographie",
-      "date": "2019-08-05",
-      "tags": ["Photographie", "Reflex numérique", "Lightroom"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "thumbnail": "photographie-project.jpg",
       "links": {
         "github": "",
         "preview": ""

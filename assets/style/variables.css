@@ -3,7 +3,7 @@
   --bg-primary: hsl(217, 46%, 37%);
   --bg-primary-lighten: hsla(217, 33%, 50%, 0.06);
   --bg-primary-darken: hsl(217, 61%, 28%);
-  --bg-dark: hsl(0, 0%, 11%);
+  --bg-dark: hsl(0, 0%, 24%);
   --bg-dark-lighten: hsl(0, 0%, 61%);
   --bg-white: hsl(0, 0%, 100%);
   /* font */
@@ -36,6 +36,6 @@
   /* wrapper */
   --max-wrapper: 100rem;
   /* shadow */
-  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  --shadow: 0 1px 2px 0 hsla(206, 6%, 25%, 0.3),
+    0 1px 3px 1px hsla(206, 6%, 25%, 0.15);
 }
