@@ -15,7 +15,7 @@ export default class Footer extends LitElement {
         <div class="footer__wrapper page-width">
           <img
             class="footer__logo"
-            src="../assets/images/logos/blue-logo.svg"
+            src="./images/logos/blue-logo.svg"
             alt="logo"
           />
           <p class="footer__description">Je suis un super footer</p>

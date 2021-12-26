@@ -49,14 +49,14 @@ export const componentStyle = css`
   }
 
   .navbar__network-icon--linkedin {
-    background-image: url(../../assets/images/icons/linkedin-network.svg);
+    background-image: url(./images/icons/linkedin-network.svg);
   }
 
   .navbar__network-icon--github {
-    background-image: url(../../assets/images/icons/github-network.svg);
+    background-image: url(./images/icons/github-network.svg);
   }
 
   .navbar__network-icon--codepen {
-    background-image: url(../../assets/images/icons/codepen-network.svg);
+    background-image: url(./images/icons/codepen-network.svg);
   }
 `;

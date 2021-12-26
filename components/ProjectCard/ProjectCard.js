@@ -22,7 +22,7 @@ export default class ProjectCard extends LitElement {
   render() {
     return html`
       <article class="project-card">
-        <img class="project-card__img" src="./assets/images/projects/${
+        <img class="project-card__img" src="./images/projects/${
           this.thumbnail
         }" alt="${this.name}"></img>
         <h3 class="project-card__title">${this.name}</h3>

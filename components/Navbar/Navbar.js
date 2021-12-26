@@ -26,7 +26,7 @@ export default class Nav extends LitElement {
         <div class="navbar__wrapper page-width">
           <img
             class="navbar__logo"
-            src="../assets/images/logos/blue-logo.svg"
+            src="./images/logos/blue-logo.svg"
             alt="logo"
           />
           <ul class="navbar__networks-list">
