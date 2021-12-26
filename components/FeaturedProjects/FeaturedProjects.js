@@ -11,6 +11,8 @@ import data from "../../assets/data.json";
 export default class FeaturedProjects extends LitElement {
   static properties = {
     projects: { type: Object },
+    isAscending: { type: Boolean },
+    tags: { attribute: "tags" },
   };
 
   static styles = [sharedStyles, componentStyle];
@@ -18,17 +20,35 @@ export default class FeaturedProjects extends LitElement {
   constructor() {
     super();
     this.projects = data.projects;
+    this.isAscending = false;
   }
 
   render() {
     return html`
+      <div class="sort-by-date-wrapper">
+        trier par date :
+        <button
+          aria-label="Trier les projets par date"
+          @click=${() =>
+            this.sortByDate((this.isAscending = !this.isAscending))}
+        >
+          ${this.isAscending
+            ? html`<i class="icon-sort" aria-hidden="true"></i>`
+            : html`<i
+                class="icon-sort icon-sort--desc"
+                aria-hidden="true"
+              ></i>`}
+        </button>
+      </div>
       <div class="featured-projects">
         ${this.projects.map(
           (project) => html` <project-card
-            .id=${project.id}
+            id=${project.id}
+            tags=${project.tags.map((tag) =>
+              tag.toLowerCase().replace(/\s/g, "-")
+            )}
             .name=${project.name}
             .date=${project.date}
-            .tags=${project.tags}
             .description=${project.description}
             .thumbnail=${project.thumbnail}
             .links=${project.links}
@@ -37,5 +57,17 @@ export default class FeaturedProjects extends LitElement {
         )}
       </div>
     `;
+  }
+
+  sortByDate(isAscending) {
+    if (isAscending) {
+      this.projects = [
+        ...this.projects.sort((a, b) => a.date.localeCompare(b.date)),
+      ];
+    } else if (!isAscending) {
+      this.projects = [
+        ...this.projects.sort((a, b) => b.date.localeCompare(a.date)),
+      ];
+    }
   }
 }

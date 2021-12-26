@@ -8,7 +8,7 @@ body {
   line-height: var(--spacing-5);
   font-family: var(--font-family);
   font-size: var(--font-size-2);
-  color: var(--color-dark);
+  color: var(--bg-dark);
   background: var(--bg-primary-lighten);
   scroll-behavior: smooth;
 }

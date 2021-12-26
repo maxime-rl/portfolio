@@ -40,6 +40,10 @@ export const sharedStyles = css`
   }
 
   button {
+    font-size: inherit;
+    text-decoration: inherit;
+    background: inherit;
+    border: inherit;
     cursor: pointer;
   }
 
