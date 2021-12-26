@@ -58,4 +58,9 @@ export const sharedStyles = css`
       padding: var(--spacing-4) var(--spacing-8);
     }
   }
+
+  .site__logo {
+    object-fit: contain;
+    width: 3.7rem;
+  }
 `;

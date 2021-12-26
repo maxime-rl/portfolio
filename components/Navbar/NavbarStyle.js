@@ -15,11 +15,6 @@ export const componentStyle = css`
     align-items: center;
   }
 
-  .navbar__logo {
-    object-fit: contain;
-    width: 4rem;
-  }
-
   .navbar__networks-list {
     display: flex;
     margin: 0;
