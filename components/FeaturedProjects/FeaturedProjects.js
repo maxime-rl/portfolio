@@ -1,4 +1,6 @@
 import { LitElement, html } from "lit";
+import { componentStyle } from "./FeaturedProjectsStyle";
+import { sharedStyles } from "../../helpers/sharedStyles";
 
 import data from "../../assets/data.json";
 
@@ -11,6 +13,8 @@ export default class FeaturedProjects extends LitElement {
     projects: { type: Object },
   };
 
+  static styles = [sharedStyles, componentStyle];
+
   constructor() {
     super();
     this.projects = data.projects;
@@ -18,7 +22,7 @@ export default class FeaturedProjects extends LitElement {
 
   render() {
     return html`
-      <section class="featured-projects">
+      <section class="featured-projects page-width">
         ${this.projects.map(
           (project) => html` <project-card
             .id=${project.id}

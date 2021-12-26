@@ -33,11 +33,9 @@ export default class Nav extends LitElement {
             ${this.networks.map(
               (network) => html` <li>
                 <a href="${network.link}">
-                  <img
-                    class="navbar__network-icon"
-                    src="../assets/images/icons/${network.icon}"
-                    alt="icône ${network.name}"
-                  />
+                  <i
+                    class="navbar__network-icon navbar__network-icon--${network.name.toLowerCase()}"
+                  ></i>
                 </a>
               </li>`
             )}
