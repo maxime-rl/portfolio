@@ -27,14 +27,18 @@ export default class Nav extends LitElement {
           <img
             class="navbar__logo"
             src="./images/logos/blue-logo.svg"
-            alt="logo"
+            alt="logo du site de Maxime Robil-Leprêtre"
           />
           <ul class="navbar__networks-list">
             ${this.networks.map(
               (network) => html` <li>
-                <a href="${network.link}">
+                <a
+                  href="${network.link}"
+                  aria-label="Voir le profil ${network.name}"
+                >
                   <i
                     class="navbar__network-icon navbar__network-icon--${network.name.toLowerCase()}"
+                    aria-hidden="true"
                   ></i>
                 </a>
               </li>`

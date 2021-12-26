@@ -20,6 +20,9 @@ export const componentStyle = css`
   .footer__description {
     margin: 0;
     gap: var(--spacing-3);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.7rem;
     line-height: 0;
   }
 

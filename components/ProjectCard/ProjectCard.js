@@ -22,6 +22,11 @@ export default class ProjectCard extends LitElement {
   render() {
     return html`
       <article class="project-card">
+        ${
+          new Date(this.date) > new Date()
+            ? html`<div class="project-card__work-in-progress">en cours</div>`
+            : null
+        }
         <img class="project-card__img" src="./images/projects/${
           this.thumbnail
         }" alt="${this.name}"></img>
@@ -32,6 +37,7 @@ export default class ProjectCard extends LitElement {
             ? html`<a
                 class="project-card__link project-card__link--preview"
                 href="${this.links.preview}"
+                aria-label="Voir un aperçu live"
               >
                 <i class="project-card__icon project-card__icon--preview"></i>
               </a>`
@@ -44,6 +50,7 @@ export default class ProjectCard extends LitElement {
             ? html`<a
                 class="project-card__link project-card__link--github"
                 href="${this.links.github}"
+                aria-label="Voir le répertoire Github"
               >
                 <i class="project-card__icon project-card__icon--github"></i>
               </a>`

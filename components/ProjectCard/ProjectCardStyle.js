@@ -2,6 +2,7 @@ import { css } from "lit";
 
 export const componentStyle = css`
   .project-card {
+    position: relative;
     display: grid;
     grid-template-areas:
       "image image image image"
@@ -12,6 +13,22 @@ export const componentStyle = css`
     background: var(--bg-white);
     border-radius: var(--radius-1);
     box-shadow: var(--shadow);
+  }
+
+  .project-card__work-in-progress {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 9px;
+    right: 9px;
+    width: 4rem;
+    height: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.7rem;
+    background: var(--bg-white);
+    border-radius: 0.2rem;
   }
 
   .project-card__img {
@@ -31,11 +48,9 @@ export const componentStyle = css`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: var(--spacing-4);
+    padding-right: var(--spacing-2);
     line-height: 0;
-  }
-
-  .project-card__link {
-    padding: var(--spacing-2) var(--spacing-3) var(--spacing-2) var(--spacing-2);
   }
 
   .project-card__link:hover .project-card__icon {
@@ -71,7 +86,7 @@ export const componentStyle = css`
     width: 4rem;
     height: 1.5rem;
     background: white;
-    bottom: 45px;
+    bottom: 37px;
     left: 3px;
     border-radius: 0.2rem;
     font-weight: 500;
@@ -91,25 +106,25 @@ export const componentStyle = css`
     border-right: 5px solid #fff0;
     border-left: 5px solid #fff0;
     background: transparent;
-    bottom: 38.5px;
+    bottom: 31px;
   }
 
   .project-card__link--preview::before {
     content: "preview";
-    left: 3px;
+    left: -14px;
   }
 
   .project-card__link--preview::after {
-    left: 13px;
+    left: 5px;
   }
 
   .project-card__link--github::before {
     content: "github";
-    left: -37px;
+    left: -49.5px;
   }
 
   .project-card__link--github::after {
-    left: 11px;
+    left: 3px;
   }
 
   .project-card__icon {
@@ -134,7 +149,6 @@ export const componentStyle = css`
   }
 
   .project-card__icon--not-available {
-    padding: var(--spacing-2) var(--spacing-3) var(--spacing-2) var(--spacing-2);
     filter: brightness(3.3);
   }
 

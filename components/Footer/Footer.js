@@ -16,9 +16,11 @@ export default class Footer extends LitElement {
           <img
             class="footer__logo"
             src="./images/logos/blue-logo.svg"
-            alt="logo"
+            alt="logo du site de Maxime Robil-Leprêtre"
           />
-          <p class="footer__description">Je suis un super footer</p>
+          <p class="footer__description">
+            © ${new Date().getFullYear()} - Maxime RL
+          </p>
         </div>
       </footer>
     `;
