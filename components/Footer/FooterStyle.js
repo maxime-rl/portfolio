@@ -10,13 +10,6 @@ export const componentStyle = css`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-4);
-  }
-
-  @media (width >= 75rem) {
-    .footer__wrapper {
-      padding: var(--spacing-4) var(--spacing-8);
-    }
   }
 
   .footer__logo {

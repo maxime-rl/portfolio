@@ -13,13 +13,6 @@ export const componentStyle = css`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-4);
-  }
-
-  @media (width >= 75rem) {
-    .navbar__wrapper {
-      padding: var(--spacing-4) var(--spacing-8);
-    }
   }
 
   .navbar__logo {

@@ -22,7 +22,7 @@ export default class FeaturedProjects extends LitElement {
 
   render() {
     return html`
-      <section class="featured-projects page-width">
+      <div class="featured-projects">
         ${this.projects.map(
           (project) => html` <project-card
             .id=${project.id}
@@ -35,7 +35,7 @@ export default class FeaturedProjects extends LitElement {
           >
           </project-card>`
         )}
-      </section>
+      </div>
     `;
   }
 }

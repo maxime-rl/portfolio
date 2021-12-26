@@ -25,7 +25,7 @@ export default class ProjectCard extends LitElement {
         <img class="project-card__img" src="./assets/images/projects/${
           this.thumbnail
         }" alt="${this.name}"></img>
-        <h2 class="project-card__title">${this.name}</h2>
+        <h3 class="project-card__title">${this.name}</h3>
         <div class="project-card__links">
         ${
           this.links.preview

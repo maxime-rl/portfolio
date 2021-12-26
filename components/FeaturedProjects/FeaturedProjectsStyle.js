@@ -3,7 +3,6 @@ import { css } from "lit";
 export const componentStyle = css`
   .featured-projects {
     display: grid;
-    padding: var(--spacing-4);
     gap: 1rem;
   }
 
@@ -17,12 +16,6 @@ export const componentStyle = css`
   @media (width >= 60rem) {
     .featured-projects {
       grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
-  @media (width >= 75rem) {
-    .featured-projects {
-      padding: var(--spacing-4) var(--spacing-8);
     }
   }
 
