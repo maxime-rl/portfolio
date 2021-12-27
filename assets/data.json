@@ -4,7 +4,7 @@
       "id": "hiNX6xwt-Y",
       "name": "Portfolio",
       "date": "2022-01-15",
-      "tags": ["Frontend", "Web components", "Vite", "PostCSS"],
+      "tags": ["frontend", "web-components", "vite", "postcss"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "portfolio-project.jpg",
       "links": {
@@ -16,7 +16,7 @@
       "id": "vEVS-HfmNl",
       "name": "HRnet",
       "date": "2021-12-15",
-      "tags": ["Frontend", "React", "Package npm"],
+      "tags": ["frontend", "react", "package-npm"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "hrnet-project.jpg",
       "links": {
@@ -28,7 +28,7 @@
       "id": "Ppnufrkjuc",
       "name": "Argent Bank",
       "date": "2021-11-25",
-      "tags": ["Frontend", "React", "Redux", "Rest API"],
+      "tags": ["frontend", "react", "redux", "rest-api"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "argent-bank-project.jpg",
       "links": {
@@ -40,7 +40,7 @@
       "id": "s9hd7bLZkT",
       "name": "SportSee",
       "date": "2021-10-10",
-      "tags": ["Frontend", "React", "Recharts"],
+      "tags": ["frontend", "react", "recharts"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "sport-see-project.jpg",
       "links": {
@@ -52,7 +52,7 @@
       "id": "XSV6KNpvsv",
       "name": "Kasa",
       "date": "2021-09-02",
-      "tags": ["Frontend", "React", "Sass"],
+      "tags": ["frontend", "react", "sass"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "kasa-project.jpg",
       "links": {
@@ -64,7 +64,7 @@
       "id": "gCswVOKLEB",
       "name": "Learn@Home",
       "date": "2021-08-27",
-      "tags": ["Gestion", "Use cases", "User stories", "Figma"],
+      "tags": ["gestion", "use-cases", "user-stories", "figma"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "learn-home-project.jpg",
       "links": {
@@ -76,7 +76,7 @@
       "id": "0UO-GmDpZT",
       "name": "Billed",
       "date": "2021-08-16",
-      "tags": ["Frontend", "Test", "Jest", "JQuery"],
+      "tags": ["frontend", "test", "jest", "jquery"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "billed-project.jpg",
       "links": {
@@ -88,7 +88,7 @@
       "id": "D1yQVpMlKY",
       "name": "Les petits plats",
       "date": "2021-07-07",
-      "tags": ["Frontend", "Vanilla JS", "Sass", "Webpack", "Algorithme"],
+      "tags": ["frontend", "vanilla-js", "sass", "webpack", "algorithme"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "les-petits-plats-project.jpg",
       "links": {
@@ -100,7 +100,7 @@
       "id": "r12_Db7YPJ",
       "name": "FishEye",
       "date": "2021-05-25",
-      "tags": ["Frontend", "Vanilla JS", "Sass", "Webpack", "Accessibilité"],
+      "tags": ["frontend", "vanilla-js", "sass", "webpack", "accessibilité"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "fish-eye-project.jpg",
       "links": {
@@ -112,7 +112,7 @@
       "id": "H-yI-h7OnB",
       "name": "GameOn",
       "date": "2021-03-12",
-      "tags": ["Frontend", "Vanilla JS"],
+      "tags": ["frontend", "vanilla-js"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "game-on-project.jpg",
       "links": {
@@ -124,7 +124,7 @@
       "id": "306pLXGgqa",
       "name": "Ohmyfood",
       "date": "2021-02-23",
-      "tags": ["Frontend", "Sass", "Animation"],
+      "tags": ["frontend", "sass", "animation"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "ohmyfood-project.jpg",
       "links": {
@@ -136,7 +136,7 @@
       "id": "Bya222XJa4",
       "name": "Reservia",
       "date": "2021-02-05",
-      "tags": ["Frontend", "Intégration", "Html", "Css"],
+      "tags": ["frontend", "intégration", "html", "css"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "reservia-project.jpg",
       "links": {
@@ -148,7 +148,7 @@
       "id": "ibmvsFOjss",
       "name": "Neonoos",
       "date": "2020-06-15",
-      "tags": ["Frontend", "Angular", "Ionic", "Sass", "UI/UX"],
+      "tags": ["frontend", "angular", "ionic", "sass", "webdesign"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "neonoos-project.jpg",
       "links": {
@@ -161,14 +161,14 @@
       "name": "Penstyle Shoes",
       "date": "2020-04-10",
       "tags": [
-        "Frontend",
-        "Wordpress",
-        "Bootstrap",
-        "E-commerce",
-        "Webdesign",
-        "Figma",
-        "Photoshop",
-        "Illustrator"
+        "frontend",
+        "wordpress",
+        "bootstrap",
+        "e-commerce",
+        "webdesign",
+        "figma",
+        "photoshop",
+        "illustrator"
       ],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "penstyle-shoes-project.jpg",
@@ -181,7 +181,7 @@
       "id": "DU69Iv679A",
       "name": "Ruze",
       "date": "2020-01-10",
-      "tags": ["UI/UX", "Figma", "Illustrator"],
+      "tags": ["ux/ui", "figma", "illustrator"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "ruze-project.png",
       "links": {
@@ -193,7 +193,7 @@
       "id": "P3_PXgFiZc",
       "name": "Game Of Jobs",
       "date": "2019-12-15",
-      "tags": ["Webdesign", "Wordpress", "Photoshop", "Illustrator"],
+      "tags": ["webdesign", "wordpress", "photoshop", "illustrator"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "game-of-jobs-project.jpg",
       "links": {
@@ -206,12 +206,12 @@
       "name": "Rock&Sun",
       "date": "2019-11-05",
       "tags": [
-        "Webdesign",
-        "Publicité",
-        "Figma",
-        "Photoshop",
-        "Illustrator",
-        "After Effects"
+        "webdesign",
+        "publicité",
+        "figma",
+        "photoshop",
+        "illustrator",
+        "after effects"
       ],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "rock-sun-project.jpg",
@@ -224,7 +224,7 @@
       "id": "kqw1wPn-gt",
       "name": "Domaine Burdigala",
       "date": "2019-10-02",
-      "tags": ["Webdesign", "Photoshop", "Illustrator"],
+      "tags": ["webdesign", "photoshop", "illustrator"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "burdigala-project.jpg",
       "links": {

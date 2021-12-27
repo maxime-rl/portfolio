@@ -1,4 +1,4 @@
-import { LitElement, html } from "lit";
+import { LitElement, html, css } from "lit";
 import { componentStyle } from "./FeaturedProjectsStyle";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
@@ -10,9 +10,9 @@ import data from "../../assets/data.json";
  */
 export default class FeaturedProjects extends LitElement {
   static properties = {
-    projects: { type: Object },
+    projects: { type: Array },
     isAscending: { type: Boolean },
-    tags: { attribute: "tags" },
+    filteredProjects: { type: Array },
   };
 
   static styles = [sharedStyles, componentStyle];
@@ -21,6 +21,7 @@ export default class FeaturedProjects extends LitElement {
     super();
     this.projects = data.projects;
     this.isAscending = false;
+    this.filteredProjects = [];
   }
 
   render() {
@@ -30,7 +31,7 @@ export default class FeaturedProjects extends LitElement {
         <button
           aria-label="Trier les projets par date"
           @click=${() =>
-            this.sortByDate((this.isAscending = !this.isAscending))}
+            this.sortedByDate((this.isAscending = !this.isAscending))}
         >
           ${this.isAscending
             ? html`<i class="icon-sort" aria-hidden="true"></i>`
@@ -40,13 +41,21 @@ export default class FeaturedProjects extends LitElement {
               ></i>`}
         </button>
       </div>
+      <div>
+        filtrer par :
+        <button @click=${() => this.getAllProjects(data.projects)}>all</button>
+        <button @click=${() => this.getFrontendProjects(data.projects)}>
+          frontend
+        </button>
+        <button @click=${() => this.getWebdesignProjects(data.projects)}>
+          webdesign
+        </button>
+      </div>
+      <div>${this.projects.length}</div>
       <div class="featured-projects">
         ${this.projects.map(
           (project) => html` <project-card
             id=${project.id}
-            tags=${project.tags.map((tag) =>
-              tag.toLowerCase().replace(/\s/g, "-")
-            )}
             .name=${project.name}
             .date=${project.date}
             .description=${project.description}
@@ -59,15 +68,44 @@ export default class FeaturedProjects extends LitElement {
     `;
   }
 
-  sortByDate(isAscending) {
+  getAllProjects(projects) {
+    this.filteredProjects = [];
+    this.isAscending = false;
+    for (let project of projects) {
+      this.filteredProjects.push(project);
+      this.projects = [...this.filteredProjects];
+    }
+  }
+
+  getFrontendProjects(projects) {
+    this.filteredProjects = [];
+    this.isAscending = false;
+    for (let project of projects) {
+      if (project.tags.includes("frontend")) {
+        this.filteredProjects.push(project);
+        this.projects = [...this.filteredProjects];
+      }
+    }
+  }
+
+  getWebdesignProjects(projects) {
+    this.filteredProjects = [];
+    this.isAscending = false;
+    for (let project of projects) {
+      if (project.tags.includes("webdesign")) {
+        this.filteredProjects.push(project);
+        this.projects = [...this.filteredProjects];
+      }
+    }
+  }
+
+  sortedByDate(isAscending) {
     if (isAscending) {
       this.projects = [
         ...this.projects.sort((a, b) => a.date.localeCompare(b.date)),
       ];
-    } else if (!isAscending) {
-      this.projects = [
-        ...this.projects.sort((a, b) => b.date.localeCompare(a.date)),
-      ];
+    } else {
+      this.projects = [...this.projects.reverse()];
     }
   }
 }
