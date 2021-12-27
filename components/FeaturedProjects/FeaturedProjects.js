@@ -70,6 +70,7 @@ export default class FeaturedProjects extends LitElement {
 
   getAllProjects(projects) {
     this.filteredProjects = [];
+    this.isAscending = false;
     for (let project of projects) {
       this.filteredProjects.push(project);
       this.projects = [...this.filteredProjects];
@@ -78,6 +79,7 @@ export default class FeaturedProjects extends LitElement {
 
   getFrontendProjects(projects) {
     this.filteredProjects = [];
+    this.isAscending = false;
     for (let project of projects) {
       if (project.tags.includes("frontend")) {
         this.filteredProjects.push(project);
@@ -88,6 +90,7 @@ export default class FeaturedProjects extends LitElement {
 
   getWebdesignProjects(projects) {
     this.filteredProjects = [];
+    this.isAscending = false;
     for (let project of projects) {
       if (project.tags.includes("webdesign")) {
         this.filteredProjects.push(project);
