@@ -91,7 +91,7 @@ export const componentStyle = css`
     border-radius: 0.2rem;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.7rem;
+    font-size: var(--font-size-1);
   }
 
   .project-card__link--preview::after,

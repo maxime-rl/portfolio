@@ -1,4 +1,4 @@
-import { LitElement, html } from "lit";
+import { LitElement, html, css } from "lit";
 import { sharedStyles } from "../helpers/sharedStyles";
 
 /**
@@ -6,6 +6,10 @@ import { sharedStyles } from "../helpers/sharedStyles";
  * @returns {{HTMLElement}}
  */
 export class HomePage extends LitElement {
+  static properties = {
+    projects: { type: Object },
+  };
+
   static styles = sharedStyles;
 
   render() {

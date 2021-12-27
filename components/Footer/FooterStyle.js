@@ -17,7 +17,7 @@ export const componentStyle = css`
     margin: 0;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.7rem;
+    font-size: var(--font-size-1);
     line-height: 0;
     color: var(--bg-white);
   }
