@@ -22,6 +22,7 @@ export const componentStyle = css`
   @media (width >= 80rem) {
     .featured-projects {
       grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
     }
   }
 
@@ -34,9 +35,9 @@ export const componentStyle = css`
     background-image: url(./images/icons/arrow.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.3rem;
-    width: 1.3rem;
-    height: 1.3rem;
+    background-size: 1.15rem;
+    width: 1.15rem;
+    height: 1.15rem;
   }
 
   .icon-sort--desc {

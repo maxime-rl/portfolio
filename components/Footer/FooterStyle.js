@@ -2,7 +2,7 @@ import { css } from "lit";
 
 export const componentStyle = css`
   .footer {
-    background: var(--bg-white);
+    background: var(--bg-dark);
     box-shadow: var(--shadow);
   }
 
@@ -10,7 +10,6 @@ export const componentStyle = css`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--bg-dark);
   }
 
   .footer__description {
