@@ -27,7 +27,8 @@ export const componentStyle = css`
     font-weight: 500;
     font-style: normal;
     font-size: 0.7rem;
-    background: var(--bg-white);
+    background: var(--bg-primary);
+    color: var(--bg-white);
     border-radius: 0.2rem;
   }
 
@@ -85,13 +86,14 @@ export const componentStyle = css`
     align-items: center;
     width: 4rem;
     height: 1.5rem;
-    background: white;
     bottom: 37px;
     left: 3px;
     border-radius: 0.2rem;
     font-weight: 500;
     font-style: normal;
     font-size: var(--font-size-1);
+    color: var(--bg-white);
+    background: var(--bg-primary);
   }
 
   .project-card__link--preview::after,
@@ -102,7 +104,7 @@ export const componentStyle = css`
     content: "";
     height: 0;
     width: 0;
-    border-top: 10px solid white;
+    border-top: 10px solid var(--bg-primary);
     border-right: 5px solid #fff0;
     border-left: 5px solid #fff0;
     background: transparent;

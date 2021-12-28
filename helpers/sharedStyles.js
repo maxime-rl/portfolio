@@ -2,6 +2,7 @@ import { css } from "lit";
 
 export const sharedStyles = css`
   ::slotted(.banner-component__img) {
+    margin-top: var(--spacing-4);
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -53,7 +54,7 @@ export const sharedStyles = css`
     max-width: var(--max-wrapper);
   }
 
-  @media (width >= 75rem) {
+  @media (width >= 80rem) {
     .page-width {
       padding: var(--spacing-4) var(--spacing-8);
     }

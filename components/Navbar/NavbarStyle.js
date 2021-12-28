@@ -15,7 +15,7 @@ export const componentStyle = css`
     align-items: center;
   }
 
-  .navbar__networks-list {
+  .navbar__network-list {
     display: flex;
     margin: 0;
     gap: var(--spacing-3);
@@ -23,7 +23,7 @@ export const componentStyle = css`
   }
 
   @media (width >= 75rem) {
-    .navbar__networks-list {
+    .navbar__network-list {
       gap: var(--spacing-4);
     }
   }

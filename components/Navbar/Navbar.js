@@ -29,7 +29,7 @@ export default class Nav extends LitElement {
             src="./images/logos/blue-logo.svg"
             alt="logo du site de Maxime Robil-Leprêtre"
           />
-          <ul class="navbar__networks-list">
+          <ul class="navbar__network-list">
             ${this.networks.map(
               (network) => html` <li>
                 <a
