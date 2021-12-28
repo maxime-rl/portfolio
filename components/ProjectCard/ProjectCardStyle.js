@@ -27,7 +27,8 @@ export const componentStyle = css`
     font-weight: 500;
     font-style: normal;
     font-size: 0.7rem;
-    background: var(--bg-white);
+    background: var(--bg-primary);
+    color: var(--bg-white);
     border-radius: 0.2rem;
   }
 

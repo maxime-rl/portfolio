@@ -16,12 +16,24 @@
       "id": "vEVS-HfmNl",
       "name": "HRnet",
       "date": "2021-12-15",
-      "tags": ["frontend", "react", "package-npm"],
+      "tags": ["frontend", "react"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "hrnet-project.jpg",
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_14_03122021",
         "preview": "https://maxime-robil-lepretre-14-oc.netlify.app/"
+      }
+    },
+    {
+      "id": "tEo-SQfmal",
+      "name": "Package npm",
+      "date": "2021-12-10",
+      "tags": ["frontend", "react", "package-npm"],
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "thumbnail": "package-npm.jpg",
+      "links": {
+        "github": "https://github.com/maxime-rl/react-modal-mrl",
+        "preview": "https://react-modal-mrl.netlify.app/"
       }
     },
     {
@@ -110,14 +122,14 @@
     },
     {
       "id": "H-yI-h7OnB",
-      "name": "GameOn",
+      "name": "Form validation",
       "date": "2021-03-12",
       "tags": ["frontend", "vanilla-js"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "thumbnail": "game-on-project.jpg",
+      "thumbnail": "form-validation-project.jpg",
       "links": {
-        "github": "https://github.com/maxime-rl/GameOn-website-FR",
-        "preview": "https://maxime-rl.github.io/GameOn-website-FR/"
+        "github": "https://github.com/maxime-rl/sandbox_form_validation",
+        "preview": "https://maxime-rl.github.io/sandbox_form_validation/"
       }
     },
     {
