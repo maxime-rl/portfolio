@@ -3,7 +3,7 @@ import { sharedStyles } from "../helpers/sharedStyles";
 
 /**
  * @name HomePage
- * @returns {{HTMLElement}}
+ * @returns {HTMLElement}
  */
 export class HomePage extends LitElement {
   static styles = sharedStyles;
@@ -24,6 +24,7 @@ export class HomePage extends LitElement {
         </section>
       </main>
       <btn-top></btn-top>
+      <infinite-scroll></infinite-scroll>
       <footer-component></footer-component>
     `;
   }
