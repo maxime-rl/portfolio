@@ -3,31 +3,41 @@ import { css } from "lit";
 export const componentStyle = css`
   .infinite-scroll {
     overflow: hidden;
+    padding: var(--spacing-4) 0;
   }
 
-  .infinite-scroll__list {
-    overflow: hidden;
-    display: flex;
-    width: 3000px;
-    margin: 0 auto;
-    animation: slide 15s linear infinite;
-  }
-
-  .infinite-scroll__item {
-    background-image: url(./images/icons/tech-banner.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+  .infinite-scroll__img {
+    background: url(./images/icons/tech-banner.svg) repeat-x;
+    background-position: center;
     background-size: contain;
-    width: 100%;
-    height: 5rem;
+    height: 2rem;
+    width: 7680px;
+    animation: slide 160s linear infinite;
+  }
+
+  @media (width >= 40rem) {
+    .infinite-scroll__img {
+      height: 3rem;
+      animation: slide 180s linear infinite;
+    }
+  }
+
+  @media (width >= 80rem) {
+    .infinite-scroll {
+      padding: var(--spacing-8) 0;
+    }
+
+    .infinite-scroll__img {
+      animation: slide 200s linear infinite;
+    }
   }
 
   @keyframes slide {
     0% {
-      transform: translate3d(0, 0, 0);
+      transform: translate(0);
     }
     100% {
-      transform: translate3d(-1750px, 0, 0); /* The image width */
+      transform: translate(-3840px);
     }
   }
 `;
