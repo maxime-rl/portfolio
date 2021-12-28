@@ -1,4 +1,4 @@
-import { LitElement, html, css } from "lit";
+import { LitElement, html } from "lit";
 import { componentStyle } from "./FeaturedProjectsStyle";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
@@ -12,7 +12,8 @@ export default class FeaturedProjects extends LitElement {
   static properties = {
     projects: { type: Array },
     isAscending: { type: Boolean },
-    filteredProjects: { type: Array },
+    filteredProjectsArr: { type: Array },
+    showFilters: { type: Boolean },
   };
 
   static styles = [sharedStyles, componentStyle];
@@ -21,18 +22,57 @@ export default class FeaturedProjects extends LitElement {
     super();
     this.projects = data.projects;
     this.isAscending = false;
-    this.filteredProjects = [];
+    this.filteredProjectsArr = [];
+    this.showFilters = false;
+    this.isActive = false;
   }
 
   render() {
     return html`
-      <div class="sort-by-date-wrapper">
-        trier par date :
+      <div class="featured-projects-header">
+        <div class="featured-projects-filter">
+          <button
+            class="btn-filter"
+            @click=${() => {
+              this.showFilters = !this.showFilters;
+            }}
+          >
+            filtrer
+            <i class="icon-filter" aria-hidden="true"></i>
+          </button>
+          ${this.showFilters
+            ? html`
+                <button @click=${() => this.getAllProjects(data.projects)}>
+                  tous
+                </button>
+                <button
+                  @click=${() =>
+                    this.filteredProjects(data.projects, "frontend")}
+                >
+                  dev
+                </button>
+                <button
+                  @click=${() =>
+                    this.filteredProjects(data.projects, "webdesign")}
+                >
+                  design
+                </button>
+                <button
+                  @click=${() =>
+                    this.filteredProjects(data.projects, "gestion")}
+                >
+                  gestion
+                </button>
+              `
+            : null}
+        </div>
         <button
+          class="btn-sort"
           aria-label="Trier les projets par date"
           @click=${() =>
             this.sortedByDate((this.isAscending = !this.isAscending))}
         >
+          trier par date
           ${this.isAscending
             ? html`<i class="icon-sort" aria-hidden="true"></i>`
             : html`<i
@@ -41,18 +81,7 @@ export default class FeaturedProjects extends LitElement {
               ></i>`}
         </button>
       </div>
-      <div>
-        filtrer par :
-        <button @click=${() => this.getAllProjects(data.projects)}>all</button>
-        <button @click=${() => this.getFrontendProjects(data.projects)}>
-          frontend
-        </button>
-        <button @click=${() => this.getWebdesignProjects(data.projects)}>
-          webdesign
-        </button>
-      </div>
-      <div>${this.projects.length}</div>
-      <div class="featured-projects">
+      <div class="featured-projects-wrapper">
         ${this.projects.map(
           (project) => html` <project-card
             id=${project.id}
@@ -69,32 +98,23 @@ export default class FeaturedProjects extends LitElement {
   }
 
   getAllProjects(projects) {
-    this.filteredProjects = [];
+    this.filteredProjectsArr = [];
     this.isAscending = false;
+
     for (let project of projects) {
-      this.filteredProjects.push(project);
-      this.projects = [...this.filteredProjects];
+      this.filteredProjectsArr.push(project);
+      this.projects = [...this.filteredProjectsArr];
     }
   }
 
-  getFrontendProjects(projects) {
-    this.filteredProjects = [];
+  filteredProjects(projects, matchTag) {
+    this.filteredProjectsArr = [];
     this.isAscending = false;
-    for (let project of projects) {
-      if (project.tags.includes("frontend")) {
-        this.filteredProjects.push(project);
-        this.projects = [...this.filteredProjects];
-      }
-    }
-  }
 
-  getWebdesignProjects(projects) {
-    this.filteredProjects = [];
-    this.isAscending = false;
     for (let project of projects) {
-      if (project.tags.includes("webdesign")) {
-        this.filteredProjects.push(project);
-        this.projects = [...this.filteredProjects];
+      if (project.tags.includes(matchTag)) {
+        this.filteredProjectsArr.push(project);
+        this.projects = [...this.filteredProjectsArr];
       }
     }
   }

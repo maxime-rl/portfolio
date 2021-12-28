@@ -1,43 +1,72 @@
 import { css } from "lit";
 
 export const componentStyle = css`
-  .featured-projects {
+  .featured-projects-wrapper {
     display: grid;
     gap: 1rem;
   }
 
   @media (width >= 40rem) {
-    .featured-projects {
+    .featured-projects-wrapper {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
     }
   }
 
   @media (width >= 60rem) {
-    .featured-projects {
+    .featured-projects-wrapper {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
   @media (width >= 80rem) {
-    .featured-projects {
+    .featured-projects-wrapper {
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
     }
   }
 
-  .sort-by-date-wrapper {
+  .featured-projects-header {
     display: flex;
+    flex-direction: column;
+    padding-bottom: var(--spacing-4);
+  }
+
+  @media (width >= 40rem) {
+    .featured-projects-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .featured-projects-filter {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .btn-sort,
+  .btn-filter {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .icon-sort,
+  .icon-filter {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 1.15rem;
+    height: 1.15rem;
   }
 
   .icon-sort {
-    display: inline-block;
     background-image: url(./images/icons/arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 1.15rem;
-    width: 1.15rem;
-    height: 1.15rem;
+  }
+
+  .icon-filter {
+    background-image: url(./images/icons/filter.svg);
   }
 
   .icon-sort--desc {
