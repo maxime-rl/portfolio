@@ -57,7 +57,7 @@ export const componentStyle = css`
   .project-card__link:hover .project-card__icon {
     filter: invert(27%) sepia(69%) saturate(520%) hue-rotate(176deg)
       brightness(93%) contrast(86%);
-    transition: filter 0.3s;
+    transition: filter 0.2s;
   }
 
   .project-card__link:hover.project-card__link--preview::before,
@@ -105,15 +105,15 @@ export const componentStyle = css`
     height: 0;
     width: 0;
     border-top: 10px solid var(--bg-primary);
-    border-right: 5px solid #fff0;
-    border-left: 5px solid #fff0;
+    border-right: 4px solid #fff0;
+    border-left: 4px solid #fff0;
     background: transparent;
-    bottom: 31px;
+    bottom: 29px;
   }
 
   .project-card__link--preview::before {
     content: "preview";
-    left: -14px;
+    left: -13.5px;
   }
 
   .project-card__link--preview::after {

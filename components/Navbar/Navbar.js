@@ -33,13 +33,15 @@ export default class Nav extends LitElement {
             ${this.networks.map(
               (network) => html` <li>
                 <a
+                  target="_blank"
                   href="${network.link}"
-                  aria-label="Voir le profil ${network.name}"
+                  class="focus-visible"
+                  title="Voir le profil ${network.name} de Maxime Robil-Leprêtre"
                 >
-                  <i
+                  <span
                     class="navbar__network-icon navbar__network-icon--${network.name.toLowerCase()}"
                     aria-hidden="true"
-                  ></i>
+                  ></span>
                 </a>
               </li>`
             )}
