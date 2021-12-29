@@ -38,13 +38,17 @@ export default class ProjectCard extends LitElement {
                 class="project-card__link project-card__link--preview focus-visible"
                 target="_blank"
                 href="${this.links.preview}"
-                aria-label="Voir un aperçu live"
+                title="Voir un aperçu live"
               >
-                <i class="project-card__icon project-card__icon--preview"></i>
+                <span
+                  class="project-card__icon project-card__icon--preview"
+                  aria-hidden="true"
+                ></span>
               </a>`
-            : html`<i
+            : html`<span
                 class="project-card__icon project-card__icon--preview project-card__icon--not-available"
-              ></i>`
+                aria-hidden="true"
+              ></span>`
         }
         ${
           this.links.github
@@ -52,13 +56,17 @@ export default class ProjectCard extends LitElement {
                 class="project-card__link project-card__link--github focus-visible"
                 target="_blank"
                 href="${this.links.github}"
-                aria-label="Voir le répertoire Github"
+                title="Voir le répertoire Github"
               >
-                <i class="project-card__icon project-card__icon--github"></i>
+                <span
+                  class="project-card__icon project-card__icon--github"
+                  aria-hidden="true"
+                ></span>
               </a>`
-            : html` <i
+            : html` <span
                 class="project-card__icon project-card__icon--github project-card__icon--not-available"
-              ></i>`
+                aria-hidden="true"
+              ></span>`
         }
         </div>
         <p class="project-card__description">${this.description}</p>

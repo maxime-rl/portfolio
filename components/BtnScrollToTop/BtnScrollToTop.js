@@ -52,7 +52,7 @@ export default class BtnScrollToTop extends LitElement {
               class="btn-scrolltotop"
               aria-label="Remonter en haut de la page"
             >
-              <i class="btn-scrolltotop__icon" aria-hidden="true"></i>
+              <span class="btn-scrolltotop__icon" aria-hidden="true"></span>
             </button>
           </div>`
         : null}

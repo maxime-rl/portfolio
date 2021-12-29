@@ -29,7 +29,6 @@ export const componentStyle = css`
   .featured-projects-header {
     display: flex;
     flex-direction: column;
-    padding-bottom: var(--spacing-4);
   }
 
   @media (width >= 40rem) {
@@ -42,6 +41,8 @@ export const componentStyle = css`
 
   .featured-projects-filter {
     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: var(--spacing-4);
     gap: 0.8rem;
   }
 
@@ -49,6 +50,10 @@ export const componentStyle = css`
   .btn-toggle-filters {
     display: flex;
     gap: 0.4rem;
+  }
+
+  .btn-sort {
+    padding-bottom: var(--spacing-4);
   }
 
   .btn-sort:hover,
@@ -66,7 +71,6 @@ export const componentStyle = css`
 
   .btn-filter {
     padding: 0 0.5rem 0.11rem 0.5rem;
-    line-height: 0;
     background-color: var(--bg-white);
     color: var(--bg-primary);
     border-radius: var(--radius-1);

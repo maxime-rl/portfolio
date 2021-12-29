@@ -58,7 +58,7 @@ export default class FeaturedProjects extends LitElement {
             }}
           >
             filtrer
-            <i class="icon-filter" aria-hidden="true"></i>
+            <span class="icon-filter" aria-hidden="true"></span>
           </button>
           ${this.showFilters
             ? html`
@@ -107,11 +107,11 @@ export default class FeaturedProjects extends LitElement {
         >
           trier par date
           ${this.isAscending
-            ? html`<i class="icon-sort" aria-hidden="true"></i>`
-            : html`<i
+            ? html`<span class="icon-sort" aria-hidden="true"></span>`
+            : html`<span
                 class="icon-sort icon-sort--desc"
                 aria-hidden="true"
-              ></i>`}
+              ></span>`}
         </button>
       </div>
       <div class="featured-projects-wrapper">
