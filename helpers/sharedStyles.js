@@ -10,10 +10,6 @@ export const sharedStyles = css`
     box-shadow: var(--shadow);
   }
 
-  ::slotted(.banner-component__title) {
-    line-height: 2.3rem;
-  }
-
   h1,
   h2,
   h3,
@@ -25,6 +21,7 @@ export const sharedStyles = css`
 
   h1 {
     font-size: var(--spacing-9);
+    line-height: 2.5rem;
   }
 
   @media (width >= 80rem) {
@@ -63,7 +60,7 @@ export const sharedStyles = css`
   }
 
   button {
-    font-size: inherit;
+    font-size: revert;
     text-decoration: inherit;
     background: inherit;
     border: inherit;

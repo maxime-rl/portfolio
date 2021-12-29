@@ -15,7 +15,7 @@ export default class Footer extends LitElement {
         <div class="footer__wrapper page-width">
           <img
             class="site__logo"
-            src="./images/logos/white-logo.svg"
+            src="./images/logos/blue-logo.svg"
             alt="logo du site de Maxime Robil-Leprêtre"
           />
           <p class="footer__description">
