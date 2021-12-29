@@ -53,6 +53,8 @@ export default class FeaturedProjects extends LitElement {
         <div class="featured-projects-filter">
           <button
             class="btn-toggle-filters"
+            aria-label="Afficher les filtres"
+            title="Afficher les filtres"
             @click=${() => {
               this.showFilters = !this.showFilters;
             }}
@@ -66,6 +68,8 @@ export default class FeaturedProjects extends LitElement {
                   class="btn-filter ${classMap({
                     enabledAll: this.enabledAll,
                   })}"
+                  aria-label="Filtrer et afficher tous les projets"
+                  title="Filtrer et afficher tous les projets"
                   @click=${() => this.getAllProjects(data.projects)}
                 >
                   tous
@@ -74,6 +78,8 @@ export default class FeaturedProjects extends LitElement {
                   class="btn-filter ${classMap({
                     enabledFrontend: this.enabledFrontend,
                   })}"
+                  aria-label="Filtrer et afficher les projets frontend"
+                  title="Filtrer et afficher les projets frontend"
                   @click=${() =>
                     this.filteredProjects(data.projects, "frontend")}
                 >
@@ -83,6 +89,8 @@ export default class FeaturedProjects extends LitElement {
                   class="btn-filter ${classMap({
                     enabledWebdesign: this.enabledWebdesign,
                   })}"
+                  aria-label="Filtrer et afficher les projets webdesign"
+                  title="Filtrer et afficher les projets fwebdesign"
                   @click=${() =>
                     this.filteredProjects(data.projects, "webdesign")}
                 >
@@ -92,6 +100,8 @@ export default class FeaturedProjects extends LitElement {
                   class="btn-filter ${classMap({
                     enabledGestion: this.enabledGestion,
                   })}"
+                  aria-label="Filtrer et afficher les projets gestion"
+                  title="Filtrer et afficher les projets gestion"
                   @click=${() =>
                     this.filteredProjects(data.projects, "gestion")}
                 >
@@ -102,6 +112,8 @@ export default class FeaturedProjects extends LitElement {
         </div>
         <button
           class="btn-sort"
+          aria-label="Trier les projets par date"
+          title="Trier les projets par date"
           @click=${() =>
             this.sortedByDate((this.isAscending = !this.isAscending))}
         >
@@ -120,6 +132,7 @@ export default class FeaturedProjects extends LitElement {
             id=${project.id}
             .name=${project.name}
             .date=${project.date}
+            .tags=${project.tags}
             .description=${project.description}
             .thumbnail=${project.thumbnail}
             .links=${project.links}

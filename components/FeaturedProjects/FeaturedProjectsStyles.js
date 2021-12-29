@@ -67,8 +67,7 @@ export const componentStyles = css`
 
   .btn-sort:hover .icon-sort,
   .btn-toggle-filters:hover .icon-filter {
-    filter: invert(27%) sepia(69%) saturate(520%) hue-rotate(176deg)
-      brightness(93%) contrast(86%);
+    filter: var(--svg-hover);
     transition: all 0.2s;
   }
 

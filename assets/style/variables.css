@@ -28,12 +28,17 @@
   --spacing-9: 2.25rem;
   --spacing-10: 2.5rem;
   /* radius */
-  --radius-1: 0.3rem;
+  --radius-1: 0.2rem;
+  --radius-2: 0.3rem;
   /* wrapper */
   --max-wrapper: 100rem;
   /* shadow */
   --shadow: 0 1px 2px 0 hsla(206, 6%, 25%, 0.3),
     0 1px 3px 1px hsla(206, 6%, 25%, 0.15);
+  /* filter */
+  --svg-not-available: brightness(3.3);
+  --svg-hover: invert(27%) sepia(69%) saturate(520%) hue-rotate(176deg)
+    brightness(93%) contrast(86%);
   /* accessibility */
   --focus-visible: solid 2px var(--bg-primary);
 }
