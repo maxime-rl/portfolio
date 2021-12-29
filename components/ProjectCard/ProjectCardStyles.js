@@ -10,7 +10,7 @@ export const componentStyles = css`
       "description description description description"
       "tags tags tags tags";
     color: var(--bg-dark);
-    padding-bottom: var(--spacing-3);
+    padding: var(--spacing-3);
     background: var(--bg-white);
     border-radius: var(--radius-2);
     box-shadow: var(--shadow);
@@ -18,13 +18,11 @@ export const componentStyles = css`
 
   .project-card__work-in-progress {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0 var(--spacing-2) 0.11rem var(--spacing-2);
-    top: 0.55rem;
-    right: 0.55rem;
+    top: 0.8rem;
+    right: 0.8rem;
     font-size: var(--font-size-1);
+    line-height: initial;
     background: var(--bg-primary);
     color: var(--bg-white);
     border-radius: var(--radius-1);
@@ -38,7 +36,6 @@ export const componentStyles = css`
   .project-card__title {
     grid-area: title;
     margin: var(--spacing-2) 0;
-    padding: 0 var(--spacing-2);
     font-size: var(--font-size-3);
   }
 
@@ -48,7 +45,6 @@ export const componentStyles = css`
     align-items: center;
     justify-content: flex-end;
     gap: var(--spacing-4);
-    padding-right: var(--spacing-2);
     line-height: 0;
   }
 
@@ -105,8 +101,8 @@ export const componentStyles = css`
   }
 
   .project-card__link--preview::before {
-    content: "preview";
-    left: -0.5rem;
+    content: "aperçu";
+    left: -0.15rem;
     bottom: 2.3rem;
   }
 
@@ -115,8 +111,8 @@ export const componentStyles = css`
   }
 
   .project-card__link--github::before {
-    content: "github";
-    left: -2.3rem;
+    content: "repo";
+    left: -1.5rem;
     bottom: 2.25rem;
   }
 
@@ -161,7 +157,6 @@ export const componentStyles = css`
   .project-card__description {
     grid-area: description;
     margin: var(--spacing-2) 0;
-    padding: 0 var(--spacing-2);
     font-weight: 300;
   }
 
@@ -169,16 +164,16 @@ export const componentStyles = css`
     grid-area: tags;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 var(--spacing-2);
+    padding-top: var(--spacing-4);
     gap: 0.8rem;
   }
 
   .project-card__tag {
-    padding: 0 0.5rem 0.11rem 0.5rem;
+    padding: 0 var(--spacing-2) 0.11rem var(--spacing-2);
     font-size: var(--font-size-1);
-    background-color: var(--bg-white);
+    line-height: initial;
+    background-color: var(--bg-primary-lighten);
     color: var(--bg-primary);
     border-radius: var(--radius-1);
-    box-shadow: var(--shadow);
   }
 `;

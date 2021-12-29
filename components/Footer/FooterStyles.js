@@ -2,7 +2,7 @@ import { css } from "lit";
 
 export const componentStyles = css`
   .footer {
-    background: var(--bg-dark);
+    background: var(--bg-white);
     box-shadow: var(--shadow);
   }
 
@@ -14,10 +14,8 @@ export const componentStyles = css`
 
   .footer__description {
     margin: 0;
-    font-weight: 500;
     font-style: normal;
     font-size: var(--font-size-1);
     line-height: 0;
-    color: var(--bg-white);
   }
 `;
