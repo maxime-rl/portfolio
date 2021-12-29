@@ -49,7 +49,9 @@ export const componentStyle = css`
   .btn-sort,
   .btn-toggle-filters {
     display: flex;
+    width: fit-content;
     gap: 0.4rem;
+    opacity: 0.5;
   }
 
   .btn-sort {
@@ -59,6 +61,7 @@ export const componentStyle = css`
   .btn-sort:hover,
   .btn-toggle-filters:hover {
     color: var(--bg-primary);
+    opacity: 1;
     transition: all 0.2s;
   }
 

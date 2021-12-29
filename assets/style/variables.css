@@ -1,10 +1,8 @@
 :root {
   /* color */
   --bg-primary: hsl(217, 46%, 37%);
-  --bg-primary-lighten: hsla(217, 33%, 50%, 0.06);
-  --bg-primary-darken: hsl(217, 61%, 28%);
+  --bg-primary-lighten: hsl(0, 0%, 95.7%);
   --bg-dark: hsl(0, 0%, 16%);
-  --bg-dark-lighten: hsl(0, 0%, 61%);
   --bg-white: hsl(0, 0%, 100%);
   /* font */
   --font-family: "Poppins", sans-serif;
@@ -31,8 +29,6 @@
   --spacing-10: 2.5rem;
   /* radius */
   --radius-1: 0.3rem;
-  --radius-2: 0.5rem;
-  --radius-3: 1rem;
   /* wrapper */
   --max-wrapper: 100rem;
   /* shadow */

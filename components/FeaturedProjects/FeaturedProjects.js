@@ -15,6 +15,7 @@ export default class FeaturedProjects extends LitElement {
     isAscending: { type: Boolean },
     filteredProjectsArr: { type: Array },
     showFilters: { type: Boolean },
+    enabledFiltersBtn: { type: Boolean },
     enabledAll: { type: Boolean },
     enabledFrontend: { type: Boolean },
     enabledWebdesign: { type: Boolean },
@@ -32,6 +33,11 @@ export default class FeaturedProjects extends LitElement {
         background-color: var(--bg-primary);
         color: var(--bg-white);
       }
+
+      .enabledFiltersBtn {
+        color: var(--bg-dark);
+        opacity: 1;
+      }
     `,
   ];
 
@@ -41,6 +47,7 @@ export default class FeaturedProjects extends LitElement {
     this.isAscending = false;
     this.filteredProjectsArr = [];
     this.showFilters = false;
+    this.enabledFiltersBtn = false;
     this.enabledAll = true;
     this.enabledFrontend = false;
     this.enabledWebdesign = false;
@@ -52,7 +59,11 @@ export default class FeaturedProjects extends LitElement {
       <div class="featured-projects-header">
         <div class="featured-projects-filter">
           <button
-            class="btn-toggle-filters"
+            class="btn-toggle-filters ${classMap({
+              enabledFiltersBtn: this.enabledFiltersBtn,
+            })}"
+            .clicked=${this.enabledFiltersBtn}
+            @change=${this.toggleEnabledFiltersBtn()}
             @click=${() => {
               this.showFilters = !this.showFilters;
             }}
@@ -172,6 +183,10 @@ export default class FeaturedProjects extends LitElement {
     } else {
       this.projects = [...this.projects.reverse()];
     }
+  }
+
+  toggleEnabledFiltersBtn() {
+    this.enabledFiltersBtn = !this.enabledFiltersBtn;
   }
 
   toggleEnabledAll() {

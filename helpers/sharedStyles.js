@@ -11,7 +11,7 @@ export const sharedStyles = css`
   }
 
   ::slotted(.banner-component__title) {
-    line-height: 2.2rem;
+    line-height: 2.3rem;
   }
 
   h1,
@@ -21,6 +21,27 @@ export const sharedStyles = css`
   h5,
   h6 {
     color: var(--bg-dark);
+  }
+
+  h1 {
+    font-size: var(--spacing-9);
+  }
+
+  @media (width >= 80rem) {
+    h1 {
+      font-size: var(--spacing-10);
+      line-height: 3rem;
+    }
+  }
+
+  h2 {
+    font-size: var(--font-size-7);
+  }
+
+  @media (width >= 80rem) {
+    h2 {
+      font-size: var(--font-size-9);
+    }
   }
 
   img,
