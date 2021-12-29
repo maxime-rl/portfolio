@@ -1,5 +1,5 @@
 import { LitElement, html } from "lit";
-import { sharedStyles } from "../../helpers/sharedStyles";
+import { sharedStyles } from "../../../helpers/sharedStyles";
 
 /**
  * @name Banner

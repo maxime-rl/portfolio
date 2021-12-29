@@ -6,7 +6,7 @@ export const sharedStyles = css`
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: var(--radius-1);
+    border-radius: var(--radius-2);
     box-shadow: var(--shadow);
   }
 

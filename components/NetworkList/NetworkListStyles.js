@@ -1,21 +1,7 @@
 import { css } from "lit";
 
-export const componentStyle = css`
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: var(--bg-white);
-    box-shadow: var(--shadow);
-  }
-
-  .navbar__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar__network-list {
+export const componentStyles = css`
+  .network-list {
     display: flex;
     margin: 0;
     gap: var(--spacing-3);
@@ -23,12 +9,12 @@ export const componentStyle = css`
   }
 
   @media (width >= 75rem) {
-    .navbar__network-list {
+    .network-list {
       gap: var(--spacing-4);
     }
   }
 
-  .navbar__network-icon {
+  .network-list__icon {
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center center;
@@ -37,21 +23,21 @@ export const componentStyle = css`
     height: 2rem;
   }
 
-  .navbar__network-icon:hover {
+  .network-list__icon:hover {
     filter: invert(27%) sepia(69%) saturate(520%) hue-rotate(176deg)
       brightness(93%) contrast(86%);
     transition: filter 0.2s;
   }
 
-  .navbar__network-icon--linkedin {
+  .network-list__icon--linkedin {
     background-image: url(./images/icons/linkedin-network.svg);
   }
 
-  .navbar__network-icon--github {
+  .network-list__icon--github {
     background-image: url(./images/icons/github-network.svg);
   }
 
-  .navbar__network-icon--codepen {
+  .network-list__icon--codepen {
     background-image: url(./images/icons/codepen-network.svg);
   }
 `;

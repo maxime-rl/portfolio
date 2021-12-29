@@ -1,5 +1,5 @@
 import { LitElement, html } from "lit";
-import { componentStyle } from "./FooterStyle";
+import { componentStyles } from "./FooterStyles";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
 /**
@@ -7,7 +7,7 @@ import { sharedStyles } from "../../helpers/sharedStyles";
  * @returns {HTMLElement}
  */
 export default class Footer extends LitElement {
-  static styles = [sharedStyles, componentStyle];
+  static styles = [sharedStyles, componentStyles];
 
   render() {
     return html`

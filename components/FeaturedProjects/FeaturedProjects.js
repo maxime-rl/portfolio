@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
-import { componentStyle } from "./FeaturedProjectsStyle";
+import { componentStyles } from "./FeaturedProjectsStyles";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
 import data from "../../assets/data.json";
@@ -15,7 +15,6 @@ export default class FeaturedProjects extends LitElement {
     isAscending: { type: Boolean },
     filteredProjectsArr: { type: Array },
     showFilters: { type: Boolean },
-    enabledFiltersBtn: { type: Boolean },
     enabledAll: { type: Boolean },
     enabledFrontend: { type: Boolean },
     enabledWebdesign: { type: Boolean },
@@ -24,7 +23,7 @@ export default class FeaturedProjects extends LitElement {
 
   static styles = [
     sharedStyles,
-    componentStyle,
+    componentStyles,
     css`
       .enabledAll,
       .enabledFrontend,
@@ -32,11 +31,6 @@ export default class FeaturedProjects extends LitElement {
       .enabledGestion {
         background-color: var(--bg-primary);
         color: var(--bg-white);
-      }
-
-      .enabledFiltersBtn {
-        color: var(--bg-dark);
-        opacity: 1;
       }
     `,
   ];
@@ -47,7 +41,6 @@ export default class FeaturedProjects extends LitElement {
     this.isAscending = false;
     this.filteredProjectsArr = [];
     this.showFilters = false;
-    this.enabledFiltersBtn = false;
     this.enabledAll = true;
     this.enabledFrontend = false;
     this.enabledWebdesign = false;
@@ -59,11 +52,9 @@ export default class FeaturedProjects extends LitElement {
       <div class="featured-projects-header">
         <div class="featured-projects-filter">
           <button
-            class="btn-toggle-filters ${classMap({
-              enabledFiltersBtn: this.enabledFiltersBtn,
-            })}"
-            .clicked=${this.enabledFiltersBtn}
-            @change=${this.toggleEnabledFiltersBtn()}
+            class="btn-toggle-filters"
+            aria-label="Afficher les filtres"
+            title="Afficher les filtres"
             @click=${() => {
               this.showFilters = !this.showFilters;
             }}
@@ -77,6 +68,8 @@ export default class FeaturedProjects extends LitElement {
                   class="btn-filter ${classMap({
                     enabledAll: this.enabledAll,
                   })}"
+                  aria-label="Filtrer et afficher tous les projets"
+                  title="Filtrer et afficher tous les projets"
                   @click=${() => this.getAllProjects(data.projects)}
                 >
                   tous
@@ -85,6 +78,8 @@ export default class FeaturedProjects extends LitElement {
                   class="btn-filter ${classMap({
                     enabledFrontend: this.enabledFrontend,
                   })}"
+                  aria-label="Filtrer et afficher les projets frontend"
+                  title="Filtrer et afficher les projets frontend"
                   @click=${() =>
                     this.filteredProjects(data.projects, "frontend")}
                 >
@@ -94,6 +89,8 @@ export default class FeaturedProjects extends LitElement {
                   class="btn-filter ${classMap({
                     enabledWebdesign: this.enabledWebdesign,
                   })}"
+                  aria-label="Filtrer et afficher les projets webdesign"
+                  title="Filtrer et afficher les projets fwebdesign"
                   @click=${() =>
                     this.filteredProjects(data.projects, "webdesign")}
                 >
@@ -103,6 +100,8 @@ export default class FeaturedProjects extends LitElement {
                   class="btn-filter ${classMap({
                     enabledGestion: this.enabledGestion,
                   })}"
+                  aria-label="Filtrer et afficher les projets gestion"
+                  title="Filtrer et afficher les projets gestion"
                   @click=${() =>
                     this.filteredProjects(data.projects, "gestion")}
                 >
@@ -113,6 +112,8 @@ export default class FeaturedProjects extends LitElement {
         </div>
         <button
           class="btn-sort"
+          aria-label="Trier les projets par date"
+          title="Trier les projets par date"
           @click=${() =>
             this.sortedByDate((this.isAscending = !this.isAscending))}
         >
@@ -131,6 +132,7 @@ export default class FeaturedProjects extends LitElement {
             id=${project.id}
             .name=${project.name}
             .date=${project.date}
+            .tags=${project.tags}
             .description=${project.description}
             .thumbnail=${project.thumbnail}
             .links=${project.links}
@@ -143,7 +145,7 @@ export default class FeaturedProjects extends LitElement {
 
   getAllProjects(projects) {
     this.filteredProjectsArr = [];
-    this.toggleEnabledAll();
+    this.toggleEnabledFilter();
     if (this.isAscending) {
       this.sortedByDate((this.isAscending = !this.isAscending));
     }
@@ -156,15 +158,21 @@ export default class FeaturedProjects extends LitElement {
 
   filteredProjects(projects, matchTag) {
     this.filteredProjectsArr = [];
+
     if (this.isAscending) {
       this.sortedByDate((this.isAscending = !this.isAscending));
     }
-    if (matchTag === "frontend") {
-      this.toggleEnabledFrontend();
-    } else if (matchTag === "webdesign") {
-      this.toggleEnabledWebdesign();
-    } else if (matchTag === "gestion") {
-      this.toggleEnabledGestion();
+
+    switch (matchTag) {
+      case "frontend":
+        this.toggleEnabledFilter("frontend");
+        break;
+      case "webdesign":
+        this.toggleEnabledFilter("webdesign");
+        break;
+      case "gestion":
+        this.toggleEnabledFilter("gestion");
+        break;
     }
 
     for (let project of projects) {
@@ -185,35 +193,47 @@ export default class FeaturedProjects extends LitElement {
     }
   }
 
-  toggleEnabledFiltersBtn() {
-    this.enabledFiltersBtn = !this.enabledFiltersBtn;
+  toggleEnabledFilter(filter) {
+    switch (filter) {
+      case "frontend":
+        this.enabledFrontend = !this.enabledFrontend;
+        this.resetFilters(filter);
+        break;
+      case "webdesign":
+        this.enabledWebdesign = !this.enabledWebdesign;
+        this.resetFilters(filter);
+        break;
+      case "gestion":
+        this.enabledGestion = !this.enabledGestion;
+        this.resetFilters(filter);
+        break;
+      default:
+        this.enabledAll = !this.enabledAll;
+        this.resetFilters(filter);
+    }
   }
 
-  toggleEnabledAll() {
-    this.enabledAll = !this.enabledAll;
-    this.enabledFrontend = false;
-    this.enabledWebdesign = false;
-    this.enabledGestion = false;
-  }
-
-  toggleEnabledFrontend() {
-    this.enabledFrontend = !this.enabledFrontend;
-    this.enabledAll = false;
-    this.enabledWebdesign = false;
-    this.enabledGestion = false;
-  }
-
-  toggleEnabledWebdesign() {
-    this.enabledWebdesign = !this.enabledWebdesign;
-    this.enabledAll = false;
-    this.enabledFrontend = false;
-    this.enabledGestion = false;
-  }
-
-  toggleEnabledGestion() {
-    this.enabledGestion = !this.enabledGestion;
-    this.enabledAll = false;
-    this.enabledFrontend = false;
-    this.enabledWebdesign = false;
+  resetFilters(filter) {
+    switch (filter) {
+      case "frontend":
+        this.enabledAll = false;
+        this.enabledWebdesign = false;
+        this.enabledGestion = false;
+        break;
+      case "webdesign":
+        this.enabledAll = false;
+        this.enabledFrontend = false;
+        this.enabledGestion = false;
+        break;
+      case "gestion":
+        this.enabledAll = false;
+        this.enabledFrontend = false;
+        this.enabledWebdesign = false;
+        break;
+      default:
+        this.enabledFrontend = false;
+        this.enabledWebdesign = false;
+        this.enabledGestion = false;
+    }
   }
 }

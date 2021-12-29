@@ -1,6 +1,6 @@
 import { css } from "lit";
 
-export const componentStyle = css`
+export const componentStyles = css`
   .test {
     position: sticky;
     bottom: 0;

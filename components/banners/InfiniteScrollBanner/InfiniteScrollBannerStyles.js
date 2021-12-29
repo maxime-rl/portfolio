@@ -1,6 +1,6 @@
 import { css } from "lit";
 
-export const componentStyle = css`
+export const componentStyles = css`
   .infinite-scroll {
     overflow: hidden;
     padding: var(--spacing-4) 0;
