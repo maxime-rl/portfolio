@@ -9,6 +9,18 @@ export const componentStyles = css`
     box-shadow: var(--shadow);
   }
 
+  @media (width >= 40rem) {
+    .navbar {
+      margin-bottom: var(--spacing-7);
+    }
+  }
+
+  @media (width >= 70rem) {
+    .navbar {
+      margin-bottom: var(--spacing-10);
+    }
+  }
+
   .navbar__wrapper {
     display: flex;
     justify-content: space-between;
