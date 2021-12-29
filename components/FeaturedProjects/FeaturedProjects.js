@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
-import { componentStyle } from "./FeaturedProjectsStyle";
+import { componentStyles } from "./FeaturedProjectsStyles";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
 import data from "../../assets/data.json";
@@ -23,7 +23,7 @@ export default class FeaturedProjects extends LitElement {
 
   static styles = [
     sharedStyles,
-    componentStyle,
+    componentStyles,
     css`
       .enabledAll,
       .enabledFrontend,

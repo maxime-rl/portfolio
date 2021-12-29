@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import { componentStyle } from "./ProjectCardStyle";
+import { componentStyles } from "./ProjectCardStyles";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
 /**
@@ -17,7 +17,7 @@ export default class ProjectCard extends LitElement {
     links: { type: Array },
   };
 
-  static styles = [sharedStyles, componentStyle];
+  static styles = [sharedStyles, componentStyles];
 
   render() {
     return html`

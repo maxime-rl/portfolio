@@ -1,5 +1,5 @@
 import { LitElement, html } from "lit";
-import { componentStyle } from "./BtnScrollToTopStyle";
+import { componentStyles } from "./BtnScrollToTopStyles";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
 /**
@@ -11,7 +11,7 @@ export default class BtnScrollToTop extends LitElement {
     isVisible: { type: Boolean },
   };
 
-  static styles = [sharedStyles, componentStyle];
+  static styles = [sharedStyles, componentStyles];
 
   constructor() {
     super();

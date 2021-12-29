@@ -1,6 +1,6 @@
 import { css } from "lit";
 
-export const componentStyle = css`
+export const componentStyles = css`
   .featured-projects-wrapper {
     display: grid;
     gap: 1rem;

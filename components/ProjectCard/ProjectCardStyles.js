@@ -1,6 +1,6 @@
 import { css } from "lit";
 
-export const componentStyle = css`
+export const componentStyles = css`
   .project-card {
     position: relative;
     display: grid;

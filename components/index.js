@@ -4,4 +4,5 @@ export { default as InfiniteScrollBanner } from "./Banner/InfiniteScrollBanner/I
 export { default as FeaturedProjects } from "./FeaturedProjects/FeaturedProjects";
 export { default as ProjectCard } from "./ProjectCard/ProjectCard";
 export { default as BtnScrollToTop } from "./BtnScrollToTop/BtnScrollToTop";
+export { default as NetworkList } from "./NetworkList/NetworkList";
 export { default as Footer } from "./Footer/Footer";
