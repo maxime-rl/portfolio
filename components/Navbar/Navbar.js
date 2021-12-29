@@ -33,7 +33,9 @@ export default class Nav extends LitElement {
             ${this.networks.map(
               (network) => html` <li>
                 <a
+                  target="_blank"
                   href="${network.link}"
+                  class="focus-visible"
                   aria-label="Voir le profil ${network.name}"
                 >
                   <i

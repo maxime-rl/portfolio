@@ -57,7 +57,7 @@ export const componentStyle = css`
   .project-card__link:hover .project-card__icon {
     filter: invert(27%) sepia(69%) saturate(520%) hue-rotate(176deg)
       brightness(93%) contrast(86%);
-    transition: filter 0.3s;
+    transition: filter 0.2s;
   }
 
   .project-card__link:hover.project-card__link--preview::before,

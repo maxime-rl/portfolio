@@ -35,7 +35,8 @@ export default class ProjectCard extends LitElement {
         ${
           this.links.preview
             ? html`<a
-                class="project-card__link project-card__link--preview"
+                class="project-card__link project-card__link--preview focus-visible"
+                target="_blank"
                 href="${this.links.preview}"
                 aria-label="Voir un aperçu live"
               >
@@ -48,7 +49,8 @@ export default class ProjectCard extends LitElement {
         ${
           this.links.github
             ? html`<a
-                class="project-card__link project-card__link--github"
+                class="project-card__link project-card__link--github focus-visible"
+                target="_blank"
                 href="${this.links.github}"
                 aria-label="Voir le répertoire Github"
               >

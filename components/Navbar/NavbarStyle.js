@@ -40,7 +40,7 @@ export const componentStyle = css`
   .navbar__network-icon:hover {
     filter: invert(27%) sepia(69%) saturate(520%) hue-rotate(176deg)
       brightness(93%) contrast(86%);
-    transition: filter 0.3s;
+    transition: filter 0.2s;
   }
 
   .navbar__network-icon--linkedin {

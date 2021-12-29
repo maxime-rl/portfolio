@@ -36,6 +36,7 @@ export const sharedStyles = css`
   }
 
   a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
   }
@@ -58,6 +59,10 @@ export const sharedStyles = css`
     .page-width {
       padding: var(--spacing-4) var(--spacing-8);
     }
+  }
+
+  .focus-visible:focus-visible {
+    border: var(--focus-visible);
   }
 
   .site__logo {

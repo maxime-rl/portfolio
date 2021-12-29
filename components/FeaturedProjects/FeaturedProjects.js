@@ -1,4 +1,5 @@
-import { LitElement, html } from "lit";
+import { LitElement, html, css } from "lit";
+import { classMap } from "lit/directives/class-map.js";
 import { componentStyle } from "./FeaturedProjectsStyle";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
@@ -14,9 +15,25 @@ export default class FeaturedProjects extends LitElement {
     isAscending: { type: Boolean },
     filteredProjectsArr: { type: Array },
     showFilters: { type: Boolean },
+    enabledAll: { type: Boolean },
+    enabledFrontend: { type: Boolean },
+    enabledWebdesign: { type: Boolean },
+    enabledGestion: { type: Boolean },
   };
 
-  static styles = [sharedStyles, componentStyle];
+  static styles = [
+    sharedStyles,
+    componentStyle,
+    css`
+      .enabledAll,
+      .enabledFrontend,
+      .enabledWebdesign,
+      .enabledGestion {
+        background-color: var(--bg-primary);
+        color: var(--bg-white);
+      }
+    `,
+  ];
 
   constructor() {
     super();
@@ -24,7 +41,10 @@ export default class FeaturedProjects extends LitElement {
     this.isAscending = false;
     this.filteredProjectsArr = [];
     this.showFilters = false;
-    this.isActive = false;
+    this.enabledAll = true;
+    this.enabledFrontend = false;
+    this.enabledWebdesign = false;
+    this.enabledGestion = false;
   }
 
   render() {
@@ -32,7 +52,7 @@ export default class FeaturedProjects extends LitElement {
       <div class="featured-projects-header">
         <div class="featured-projects-filter">
           <button
-            class="btn-filter"
+            class="btn-toggle-filters"
             @click=${() => {
               this.showFilters = !this.showFilters;
             }}
@@ -42,22 +62,36 @@ export default class FeaturedProjects extends LitElement {
           </button>
           ${this.showFilters
             ? html`
-                <button @click=${() => this.getAllProjects(data.projects)}>
+                <button
+                  class="btn-filter ${classMap({
+                    enabledAll: this.enabledAll,
+                  })}"
+                  @click=${() => this.getAllProjects(data.projects)}
+                >
                   tous
                 </button>
                 <button
+                  class="btn-filter ${classMap({
+                    enabledFrontend: this.enabledFrontend,
+                  })}"
                   @click=${() =>
                     this.filteredProjects(data.projects, "frontend")}
                 >
-                  dev
+                  frontend
                 </button>
                 <button
+                  class="btn-filter ${classMap({
+                    enabledWebdesign: this.enabledWebdesign,
+                  })}"
                   @click=${() =>
                     this.filteredProjects(data.projects, "webdesign")}
                 >
-                  design
+                  webdesign
                 </button>
                 <button
+                  class="btn-filter ${classMap({
+                    enabledGestion: this.enabledGestion,
+                  })}"
                   @click=${() =>
                     this.filteredProjects(data.projects, "gestion")}
                 >
@@ -68,7 +102,6 @@ export default class FeaturedProjects extends LitElement {
         </div>
         <button
           class="btn-sort"
-          aria-label="Trier les projets par date"
           @click=${() =>
             this.sortedByDate((this.isAscending = !this.isAscending))}
         >
@@ -99,7 +132,10 @@ export default class FeaturedProjects extends LitElement {
 
   getAllProjects(projects) {
     this.filteredProjectsArr = [];
-    this.isAscending = false;
+    this.toggleEnabledAll();
+    if (this.isAscending) {
+      this.sortedByDate((this.isAscending = !this.isAscending));
+    }
 
     for (let project of projects) {
       this.filteredProjectsArr.push(project);
@@ -109,7 +145,16 @@ export default class FeaturedProjects extends LitElement {
 
   filteredProjects(projects, matchTag) {
     this.filteredProjectsArr = [];
-    this.isAscending = false;
+    if (this.isAscending) {
+      this.sortedByDate((this.isAscending = !this.isAscending));
+    }
+    if (matchTag === "frontend") {
+      this.toggleEnabledFrontend();
+    } else if (matchTag === "webdesign") {
+      this.toggleEnabledWebdesign();
+    } else if (matchTag === "gestion") {
+      this.toggleEnabledGestion();
+    }
 
     for (let project of projects) {
       if (project.tags.includes(matchTag)) {
@@ -127,5 +172,33 @@ export default class FeaturedProjects extends LitElement {
     } else {
       this.projects = [...this.projects.reverse()];
     }
+  }
+
+  toggleEnabledAll() {
+    this.enabledAll = !this.enabledAll;
+    this.enabledFrontend = false;
+    this.enabledWebdesign = false;
+    this.enabledGestion = false;
+  }
+
+  toggleEnabledFrontend() {
+    this.enabledFrontend = !this.enabledFrontend;
+    this.enabledAll = false;
+    this.enabledWebdesign = false;
+    this.enabledGestion = false;
+  }
+
+  toggleEnabledWebdesign() {
+    this.enabledWebdesign = !this.enabledWebdesign;
+    this.enabledAll = false;
+    this.enabledFrontend = false;
+    this.enabledGestion = false;
+  }
+
+  toggleEnabledGestion() {
+    this.enabledGestion = !this.enabledGestion;
+    this.enabledAll = false;
+    this.enabledFrontend = false;
+    this.enabledWebdesign = false;
   }
 }
