@@ -31,7 +31,7 @@ export const componentStyles = css`
     flex-direction: column;
   }
 
-  @media (width >= 40rem) {
+  @media (width >= 33rem) {
     .featured-projects-header {
       display: flex;
       flex-direction: row;
@@ -42,8 +42,15 @@ export const componentStyles = css`
   .featured-projects-filter {
     display: flex;
     flex-wrap: wrap;
+    order: 1;
     padding-bottom: var(--spacing-4);
     gap: 0.8rem;
+  }
+
+  @media (width >= 33rem) {
+    .featured-projects-filter {
+      order: 0;
+    }
   }
 
   .btn-sort,

@@ -1,15 +1,6 @@
 import { css } from "lit";
 
 export const sharedStyles = css`
-  ::slotted(.banner-component__img) {
-    margin-top: var(--spacing-4);
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: var(--radius-2);
-    box-shadow: var(--shadow);
-  }
-
   h1,
   h2,
   h3,
@@ -20,19 +11,18 @@ export const sharedStyles = css`
   }
 
   h1 {
-    font-size: var(--spacing-9);
-    line-height: 2.5rem;
-  }
-
-  @media (width >= 80rem) {
-    h1 {
-      font-size: var(--spacing-10);
-      line-height: 3rem;
-    }
+    font-size: var(--font-size-6);
+    line-height: 2rem;
   }
 
   h2 {
-    font-size: var(--font-size-7);
+    font-size: var(--font-size-5);
+  }
+
+  @media (width >= 40rem) {
+    h2 {
+      font-size: var(--font-size-6);
+    }
   }
 
   @media (width >= 80rem) {
