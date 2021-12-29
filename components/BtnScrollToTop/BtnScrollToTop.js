@@ -51,6 +51,7 @@ export default class BtnScrollToTop extends LitElement {
               @click=${() => this.scrollToTop()}
               class="btn-scrolltotop"
               aria-label="Remonter en haut de la page"
+              title="Remonter en haut de la page"
             >
               <span class="btn-scrolltotop__icon" aria-hidden="true"></span>
             </button>
