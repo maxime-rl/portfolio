@@ -8,6 +8,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "portfolio-project.jpg",
+      "alt": "Grille de projets de mon portfolio",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/portfolio",
@@ -22,6 +23,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "hrnet-project.jpg",
+      "alt": "Tableau des employés actuellement enregistrés dans l'application, avec système de recherches, de tri et de pagination",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_14_03122021",
@@ -36,6 +38,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "package-npm.jpg",
+      "alt": "Démonstration du package déployé, une modale accessible contenant un titre et un formulaire",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/react-modal-mrl",
@@ -50,6 +53,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "argent-bank-project.jpg",
+      "alt": "Page principale de l'application, avec son entête est une bannière d'informations",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_13_15102021",
@@ -64,6 +68,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "sport-see-project.jpg",
+      "alt": "Dashboard d'un utilisateur de l'application, avec ses sessions sportives sous forme de graphiques",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_12_06092021",
@@ -78,6 +83,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "kasa-project.jpg",
+      "alt": "Page d'une propriété du 11ème arrondissement en location, avec une photo et quelques informations utiles",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_11_12082021",
@@ -92,6 +98,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "learn-home-project.jpg",
+      "alt": "Maquette d'une des vues de la liste des taches d'un élève de l'application",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_10_12082021",
@@ -106,6 +113,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "billed-project.jpg",
+      "alt": "Formulaire d'ajout d'une note de frais d'un compte employé",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_9_11072021",
@@ -120,6 +128,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "les-petits-plats-project.jpg",
+      "alt": "Page principale de l'application avec le select des ingrédients déplié, près à être séléctionné pour une recherche",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_7_28052021",
@@ -134,6 +143,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "fish-eye-project.jpg",
+      "alt": "Profil d'un photographe affichant une grille de ses projets/photos, avec un select pour filtrer les photos",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_6_14032021",
@@ -148,6 +158,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "form-validation-project.jpg",
+      "alt": "Interface d'un formulaire servant de test de validation",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/sandbox_form_validation",
@@ -162,6 +173,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "ohmyfood-project.jpg",
+      "alt": "Page principale de l'application affichant les quatres restaurants actuellement disponibles pour une réservation",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_3_26012021",
@@ -176,6 +188,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "reservia-project.jpg",
+      "alt": "Filtres et grille de logements disponiblessur Marseille, ainsi que les logements les plus  populaires !",
       "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_2_15012021",
@@ -190,6 +203,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "neonoos-project.jpg",
+      "alt": "Mockup représentant une cartographie d'un exemple d'itineraire de l'application Neonoos, ainsi que son fil d'actualité",
       "images": null,
       "links": {
         "github": "",
@@ -204,6 +218,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "penstyle-shoes-project.jpg",
+      "alt": "Logo de la marque Penstyle Shoes, rouge sur fond blanc",
       "images": null,
       "links": {
         "github": "",
@@ -218,6 +233,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "ruze-project.png",
+      "alt": "Mockup représentant trois interfaces de l'application, le login, l'accueil, et la page d'un artiste",
       "images": null,
       "links": {
         "github": "",
@@ -232,6 +248,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "game-of-jobs-project.jpg",
+      "alt": "Logo de la plateforme GameOfJobs poussé par l'Afpa, coloré, du bleu au vert sur fond blanc",
       "images": null,
       "links": {
         "github": "",
@@ -246,6 +263,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
       "thumbnail": "rock-sun-project.jpg",
+      "alt": "Mockup représentant l'entête de la page d'accueil du site, ainsi qu'une carte de visite à l'effigie de la marque",
       "images": null,
       "links": {
         "github": "",
@@ -260,6 +278,7 @@
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": "L'objectif a été de réaliser la refonte du site internet d'un domaine viticole bordelais. Proposition et mise en place d'outils visant à améliorer leur communication visuelle. Seule restriction, leur logo devait être conservé.",
       "thumbnail": "burdigala-project.jpg",
+      "alt": "Mockup du webdesign Burdigala, représentant l'entête sur un écran Apple",
       "images": ["burdigala-1.jpg", "burdigala-2.jpg", "burdigala-3.jpg"],
       "links": {
         "github": "",

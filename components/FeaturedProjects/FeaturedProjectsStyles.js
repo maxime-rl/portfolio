@@ -58,7 +58,7 @@ export const componentStyles = css`
     display: flex;
     width: fit-content;
     gap: 0.4rem;
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   .btn-sort {

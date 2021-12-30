@@ -18,7 +18,12 @@ export default class Header extends LitElement {
           <span><span>Développeur Frontend</span></span>
           <span><span>& Webdesigner</span></span>
         </h1>
-        <img class="header__img" src="./images/profile-photo.jpg" alt="photo de profil"></img>
+        <img 
+          class="header__img" 
+          src="./images/profile-photo.jpg" 
+          alt="photo de profil" 
+          width="1000" height="450">
+        </img>
       </header>
     `;
   }

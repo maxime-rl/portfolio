@@ -3,9 +3,14 @@ import { classMap } from "lit/directives/class-map.js";
 import { componentStyles } from "./ModalStyles";
 import { sharedStyles } from "../../helpers/sharedStyles";
 
+/**
+ * @name Modal
+ * @returns {HTMLElement}
+ */
 export default class Modal extends LitElement {
   static properties = {
     open: { type: Boolean },
+    name: { type: String },
     images: { type: Array },
     description: { type: String },
   };
@@ -34,7 +39,12 @@ export default class Modal extends LitElement {
             ${this.images != null
               ? this.images.map(
                   (image) =>
-                    html` <img src="./images/projects/other/${image}"></img> `
+                    html` 
+                    <img 
+                      src="./images/projects/other/${image}" 
+                      alt="Miniature servant de description approfondie du projet ${this.name}" 
+                      width="460" height="205">
+                    </img> `
                 )
               : null}
             ${this.description != null
