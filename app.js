@@ -1,4 +1,4 @@
-import "./assets/style/index.css";
+import "./assets/index.css";
 import {
   Navbar,
   Header,

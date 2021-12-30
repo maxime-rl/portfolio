@@ -8,7 +8,7 @@ export const componentStyles = css`
     line-height: 0;
   }
 
-  @media (width >= 75rem) {
+  @media screen and (min-width: 75rem) {
     .network-list {
       gap: var(--spacing-4);
     }

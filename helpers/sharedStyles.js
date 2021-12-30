@@ -19,13 +19,13 @@ export const sharedStyles = css`
     font-size: var(--font-size-5);
   }
 
-  @media (width >= 40rem) {
+  @media screen and (min-width: 40rem) {
     h2 {
       font-size: var(--font-size-6);
     }
   }
 
-  @media (width >= 80rem) {
+  @media screen and (min-width: 80rem) {
     h2 {
       font-size: var(--font-size-9);
     }
@@ -63,7 +63,7 @@ export const sharedStyles = css`
     max-width: var(--max-wrapper);
   }
 
-  @media (width >= 80rem) {
+  @media screen and (min-width: 80rem) {
     .page-width {
       padding: var(--spacing-4) var(--spacing-8);
     }

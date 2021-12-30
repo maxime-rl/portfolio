@@ -6,20 +6,20 @@ export const componentStyles = css`
     gap: 1rem;
   }
 
-  @media (width >= 40rem) {
+  @media screen and (min-width: 40rem) {
     .featured-projects-wrapper {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
     }
   }
 
-  @media (width >= 60rem) {
+  @media screen and (min-width: 60rem) {
     .featured-projects-wrapper {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  @media (width >= 80rem) {
+  @media screen and (min-width: 80rem) {
     .featured-projects-wrapper {
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
@@ -31,7 +31,7 @@ export const componentStyles = css`
     flex-direction: column;
   }
 
-  @media (width >= 33rem) {
+  @media screen and (min-width: 33rem) {
     .featured-projects-header {
       display: flex;
       flex-direction: row;
@@ -47,7 +47,7 @@ export const componentStyles = css`
     gap: 0.8rem;
   }
 
-  @media (width >= 33rem) {
+  @media screen and (min-width: 33rem) {
     .featured-projects-filter {
       order: 0;
     }
