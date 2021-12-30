@@ -15,6 +15,7 @@ export default class ProjectCard extends LitElement {
     shortDescription: { type: String },
     description: { type: String },
     thumbnail: { type: String },
+    alt: { type: String },
     images: { type: Array },
     links: { type: Array },
   };
@@ -28,21 +29,22 @@ export default class ProjectCard extends LitElement {
   render() {
     return html`
       <article class="project-card">
-        <modal-component 
-          .images=${this.images}
-          .description=${this.description}
-          >
-        </modal-component>
         ${
           this.images
             ? html`<button
-                class="project-card__see-more"
-                aria-label="Voir plus de contenu"
-                title="Voir plus de contenu"
-                @click=${() => this.handleModal()}
-              >
-                voir plus
-              </button>`
+                  class="project-card__see-more"
+                  aria-label="Voir plus de contenu"
+                  title="Voir plus de contenu"
+                  @click=${() => this.handleModal()}
+                >
+                  voir plus
+                </button>
+                <modal-component
+                  .name=${this.name}
+                  .images=${this.images}
+                  .description=${this.description}
+                >
+                </modal-component>`
             : null
         }
         ${
@@ -52,15 +54,16 @@ export default class ProjectCard extends LitElement {
         }
         <img class="project-card__img" src="./images/projects/${
           this.thumbnail
-        }" alt="${this.name}"></img>
+        }" alt="${this.alt}" width="460" height="410"></img>
         <h3 class="project-card__title">${this.name}</h3>
         <div class="project-card__links">
         ${
           this.links.preview
             ? html`<a
                 class="project-card__link project-card__link--preview focus-visible"
-                target="_blank"
                 href="${this.links.preview}"
+                target="_blank"
+                rel="noreferrer"
                 title="Voir un aperçu live"
               >
                 <span
@@ -77,8 +80,9 @@ export default class ProjectCard extends LitElement {
           this.links.github
             ? html`<a
                 class="project-card__link project-card__link--github focus-visible"
-                target="_blank"
                 href="${this.links.github}"
+                target="_blank"
+                rel="noreferrer"
                 title="Voir le répertoire Github"
               >
                 <span

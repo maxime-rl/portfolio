@@ -7,7 +7,7 @@ export const componentStyles = css`
     top: 0;
     left: 0;
     z-index: 5;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.1s ease-in;
   }
 
   .wrapper:not(.open) {
@@ -80,8 +80,8 @@ export const componentStyles = css`
   }
 
   .dialog__btn:hover .dialog__btn-icon {
-    filter: invert(18%) sepia(82%) saturate(3471%) hue-rotate(354deg)
-      brightness(88%) contrast(86%);
+    filter: invert(30%) sepia(67%) saturate(3969%) hue-rotate(346deg)
+      brightness(93%) contrast(106%);
     transition: filter 0.2s;
   }
 `;

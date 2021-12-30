@@ -26,8 +26,9 @@ export default class NetworkList extends LitElement {
         ${this.networks.map(
           (network) => html` <li>
             <a
-              target="_blank"
               href="${network.link}"
+              target="_blank"
+              rel="noreferrer"
               class="focus-visible"
               title="Voir le profil ${network.name} de Maxime Robil-Leprêtre"
             >

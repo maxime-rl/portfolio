@@ -90,7 +90,7 @@ export default class FeaturedProjects extends LitElement {
                     enabledWebdesign: this.enabledWebdesign,
                   })}"
                   aria-label="Filtrer et afficher les projets webdesign"
-                  title="Filtrer et afficher les projets fwebdesign"
+                  title="Filtrer et afficher les projets webdesign"
                   @click=${() =>
                     this.filteredProjects(data.projects, "webdesign")}
                 >
@@ -136,6 +136,7 @@ export default class FeaturedProjects extends LitElement {
             .shortDescription=${project.shortDescription}
             .description=${project.description}
             .thumbnail=${project.thumbnail}
+            .alt=${project.alt}
             .images=${project.images}
             .links=${project.links}
           >
