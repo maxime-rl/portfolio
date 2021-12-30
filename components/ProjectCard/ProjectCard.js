@@ -14,14 +14,32 @@ export default class ProjectCard extends LitElement {
     tags: { type: Array },
     description: { type: String },
     thumbnail: { type: String },
+    images: { type: Array },
     links: { type: Array },
   };
 
   static styles = [sharedStyles, componentStyles];
 
+  constructor() {
+    super();
+  }
+
   render() {
     return html`
       <article class="project-card">
+      <modal-component></modal-component>
+        ${
+          this.images
+            ? html`<button
+                class="project-card__see-more"
+                aria-label="Fermer la modale"
+                title="Fermer la modale"
+                @click=${() => this.handleModal()}
+              >
+                voir plus
+              </button>`
+            : null
+        }
         ${
           new Date(this.date) > new Date()
             ? html`<div class="project-card__work-in-progress">en cours</div>`
@@ -77,5 +95,13 @@ export default class ProjectCard extends LitElement {
         )}</div>
       </article>
     `;
+  }
+
+  handleModal() {
+    const modal = this.shadowRoot.querySelector("modal-component");
+    modal.open = true;
+    modal.title = "Super Modal 🚀";
+    modal.text = `More than fill in with data !`;
+    modal.images = this.images;
   }
 }

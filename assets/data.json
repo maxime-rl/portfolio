@@ -223,6 +223,7 @@
       "tags": ["webdesign", "photoshop", "illustrator"],
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "thumbnail": "burdigala-project.jpg",
+      "images": ["burdigala-1.jpg", "burdigala-2.jpg"],
       "links": {
         "github": "",
         "preview": ""

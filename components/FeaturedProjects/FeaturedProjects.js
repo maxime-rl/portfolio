@@ -135,6 +135,7 @@ export default class FeaturedProjects extends LitElement {
             .tags=${project.tags}
             .description=${project.description}
             .thumbnail=${project.thumbnail}
+            .images=${project.images}
             .links=${project.links}
           >
           </project-card>`
