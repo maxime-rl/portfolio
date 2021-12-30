@@ -15,14 +15,14 @@ export const componentStyles = css`
     animation: slide 160s linear infinite;
   }
 
-  @media (width >= 40rem) {
+  @media screen and (min-width: 40rem) {
     .infinite-scroll__img {
       height: 3rem;
       animation: slide 180s linear infinite;
     }
   }
 
-  @media (width >= 80rem) {
+  @media screen and (min-width: 80rem) {
     .infinite-scroll {
       padding: var(--spacing-8) 0;
     }

@@ -9,13 +9,13 @@ export const componentStyles = css`
     box-shadow: var(--shadow);
   }
 
-  @media (width >= 40rem) {
+  @media screen and (min-width: 70rem) {
     .navbar {
       margin-bottom: var(--spacing-7);
     }
   }
 
-  @media (width >= 70rem) {
+  @media screen and (min-width: 70rem) {
     .navbar {
       margin-bottom: var(--spacing-10);
     }

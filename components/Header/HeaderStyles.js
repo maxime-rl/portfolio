@@ -5,7 +5,7 @@ export const componentStyles = css`
     position: relative;
   }
 
-  @media (width >= 40rem) {
+  @media screen and (min-width: 40rem) {
     .header {
       position: relative;
       display: grid;
@@ -21,26 +21,26 @@ export const componentStyles = css`
     border-radius: var(--radius-2);
   }
 
-  @media (width >= 40rem) {
+  @media screen and (min-width: 40rem) {
     .header__img {
       grid-column: 6/15;
       margin: 0;
     }
   }
 
-  @media (width >= 50rem) {
+  @media screen and (min-width: 50rem) {
     .header__img {
       max-height: 350px;
     }
   }
 
-  @media (width >= 65rem) {
+  @media screen and (min-width: 65rem) {
     .header__img {
       max-height: 430px;
     }
   }
 
-  @media (width >= 25rem) {
+  @media screen and (min-width: 25rem) {
     .header__title {
       display: flex;
       flex-direction: column;
@@ -59,21 +59,21 @@ export const componentStyles = css`
     margin-bottom: 0;
   }
 
-  @media (width >= 30rem) {
+  @media screen and (min-width: 30rem) {
     .header__title {
       font-size: var(--font-size-8);
       line-height: 2.4rem;
     }
   }
 
-  @media (width >= 35rem) {
+  @media screen and (min-width: 35rem) {
     .header__title {
       font-size: var(--font-size-9);
       line-height: 2.7rem;
     }
   }
 
-  @media (width >= 40rem) {
+  @media screen and (min-width: 40rem) {
     .header__title {
       position: absolute;
       margin: 0;
@@ -89,7 +89,7 @@ export const componentStyles = css`
     }
   }
 
-  @media (width >= 55rem) {
+  @media screen and (min-width: 55rem) {
     .header__title {
       padding: var(--spacing-7) var(--spacing-4);
       font-size: var(--font-size-9);
@@ -97,20 +97,20 @@ export const componentStyles = css`
     }
   }
 
-  @media (width >= 60rem) {
+  @media screen and (min-width: 60rem) {
     .header__title {
       padding: var(--spacing-8) var(--spacing-6);
     }
   }
 
-  @media (width >= 70rem) {
+  @media screen and (min-width: 70rem) {
     .header__title {
       font-size: var(--font-size-10);
       line-height: 3rem;
     }
   }
 
-  @media (width >= 80rem) {
+  @media screen and (min-width: 80rem) {
     .header__title {
       padding: var(--spacing-9) var(--spacing-6);
       left: var(--spacing-8);
@@ -119,13 +119,13 @@ export const componentStyles = css`
     }
   }
 
-  @media (width >= 90rem) {
+  @media screen and (min-width: 90rem) {
     .header__title {
       padding: var(--spacing-10) var(--spacing-7);
     }
   }
 
-  @media (width >= 100rem) {
+  @@media screen and (min-width: 100rem) {
     .header__title {
       padding: var(--spacing-11) var(--spacing-11);
       font-size: var(--font-size-12);
