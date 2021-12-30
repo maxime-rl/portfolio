@@ -46,7 +46,7 @@ export default class BtnScrollToTop extends LitElement {
   render() {
     return html`
       ${this.isVisible
-        ? html` <div class="test page-width">
+        ? html` <div class="scrolltotop-wrapper page-width">
             <button
               @click=${() => this.scrollToTop()}
               class="btn-scrolltotop"

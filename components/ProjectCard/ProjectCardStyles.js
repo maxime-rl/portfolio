@@ -16,6 +16,24 @@ export const componentStyles = css`
     box-shadow: var(--shadow);
   }
 
+  .project-card__see-more {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    padding: 0 0.5rem 0.11rem 0.5rem;
+    background-color: var(--bg-white);
+    color: var(--bg-primary);
+    border-radius: var(--radius-1);
+    box-shadow: var(--shadow);
+    transition: all 0.2s;
+  }
+
+  .project-card__see-more:hover {
+    background-color: var(--bg-primary);
+    color: var(--bg-white);
+    transition: all 0.2s;
+  }
+
   .project-card__work-in-progress {
     position: absolute;
     padding: 0 var(--spacing-2) 0.11rem var(--spacing-2);

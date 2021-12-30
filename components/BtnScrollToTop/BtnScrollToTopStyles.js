@@ -1,8 +1,9 @@
 import { css } from "lit";
 
 export const componentStyles = css`
-  .test {
+  .scrolltotop-wrapper {
     position: sticky;
+    z-index: 15;
     bottom: 0;
     display: flex;
     justify-content: flex-end;
