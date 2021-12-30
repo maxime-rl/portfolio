@@ -36,13 +36,29 @@ export const componentStyles = css`
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: calc(100% - var(--spacing-6));
     height: calc(100% - var(--spacing-6));
   }
 
-  .dialog h1 {
-    margin: 0 0 10px;
+  .dialog__content {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-top: var(--spacing-6);
+  }
+
+  .dialog__content::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .dialog__content::-webkit-scrollbar-track {
+    background: var(--bg-primary-lighten);
+    border-radius: var(--radius-2);
+  }
+
+  .dialog__content::-webkit-scrollbar-thumb {
+    background: var(--bg-dark-lighten);
+    border-radius: var(--radius-2);
   }
 
   .dialog__btn {

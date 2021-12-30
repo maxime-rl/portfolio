@@ -5,8 +5,10 @@
       "name": "Portfolio",
       "date": "2022-01-15",
       "tags": ["frontend", "web-components", "lit"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "portfolio-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/portfolio",
         "preview": "https://maxime-robil-lepretre.netlify.app/"
@@ -17,8 +19,10 @@
       "name": "HRnet",
       "date": "2021-12-15",
       "tags": ["frontend", "jquery -> react"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "hrnet-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_14_03122021",
         "preview": "https://maxime-robil-lepretre-14-oc.netlify.app/"
@@ -29,8 +33,10 @@
       "name": "Package npm",
       "date": "2021-12-10",
       "tags": ["frontend", "react", "package-npm"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "package-npm.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/react-modal-mrl",
         "preview": "https://react-modal-mrl.netlify.app/"
@@ -41,8 +47,10 @@
       "name": "Argent Bank",
       "date": "2021-11-25",
       "tags": ["frontend", "react", "redux", "rest-api"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "argent-bank-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_13_15102021",
         "preview": ""
@@ -53,8 +61,10 @@
       "name": "SportSee",
       "date": "2021-10-10",
       "tags": ["frontend", "react", "axios", "recharts"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "sport-see-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_12_06092021",
         "preview": "https://maxime-robil-lepretre-p12-oc.netlify.app/"
@@ -65,8 +75,10 @@
       "name": "Kasa",
       "date": "2021-09-02",
       "tags": ["frontend", "react", "sass"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "kasa-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/maxime-robil-lepretre_11_12082021",
         "preview": "https://maxime-robil-lepretre-p11-oc.netlify.app/"
@@ -77,8 +89,10 @@
       "name": "Learn@Home",
       "date": "2021-08-27",
       "tags": ["gestion", "use-cases", "user-stories", "figma"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "learn-home-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_10_12082021",
         "preview": "https://encouraging-megaraptor-731.notion.site/Gestion-Learn-Home-fc56e1ddfc9e454fa1869dc0afcde124"
@@ -89,8 +103,10 @@
       "name": "Billed",
       "date": "2021-08-16",
       "tags": ["frontend", "jest", "jquery"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "billed-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_9_11072021",
         "preview": ""
@@ -101,8 +117,10 @@
       "name": "Les petits plats",
       "date": "2021-07-07",
       "tags": ["frontend", "vanilla-js", "sass", "algorithme"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "les-petits-plats-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_7_28052021",
         "preview": "https://maxime-rl.github.io/MaximeRobilLepretre_7_28052021/"
@@ -113,8 +131,10 @@
       "name": "FishEye",
       "date": "2021-05-25",
       "tags": ["frontend", "vanilla-js", "sass", "accessibilité"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "fish-eye-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_6_14032021",
         "preview": "https://maxime-rl.github.io/MaximeRobilLepretre_6_14032021/"
@@ -125,8 +145,10 @@
       "name": "Form validation",
       "date": "2021-03-12",
       "tags": ["frontend", "vanilla-js"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "form-validation-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/sandbox_form_validation",
         "preview": "https://maxime-rl.github.io/sandbox_form_validation/"
@@ -137,8 +159,10 @@
       "name": "Ohmyfood",
       "date": "2021-02-23",
       "tags": ["frontend", "intégration", "sass", "animation"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "ohmyfood-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_3_26012021",
         "preview": "https://maxime-rl.github.io/MaximeRobilLepretre_3_26012021/"
@@ -149,8 +173,10 @@
       "name": "Reservia",
       "date": "2021-02-05",
       "tags": ["frontend", "intégration", "flex", "grid"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "reservia-project.jpg",
+      "images": null,
       "links": {
         "github": "https://github.com/maxime-rl/MaximeRobilLepretre_2_15012021",
         "preview": "https://maxime-rl.github.io/MaximeRobilLepretre_2_15012021/"
@@ -161,8 +187,10 @@
       "name": "Neonoos",
       "date": "2020-06-15",
       "tags": ["frontend", "angular", "ionic", "sass", "ui-ux"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "neonoos-project.jpg",
+      "images": null,
       "links": {
         "github": "",
         "preview": "https://www.neonoos.com/"
@@ -173,8 +201,10 @@
       "name": "Penstyle Shoes",
       "date": "2020-04-10",
       "tags": ["frontend", "gestion", "wordpress", "bootstrap"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "penstyle-shoes-project.jpg",
+      "images": null,
       "links": {
         "github": "",
         "preview": "https://penstyleshoes.com/"
@@ -185,8 +215,10 @@
       "name": "Ruze",
       "date": "2020-01-10",
       "tags": ["webdesign", "ui-ux", "figma", "illustrator"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "ruze-project.png",
+      "images": null,
       "links": {
         "github": "",
         "preview": "https://www.figma.com/proto/NnniTaxTFv4v9UW2TVFK2G/SPRINT-10-01-20?node-id=3%3A2&scaling=scale-down"
@@ -197,8 +229,10 @@
       "name": "Game Of Jobs",
       "date": "2019-12-15",
       "tags": ["frontend", "wordpress", "illustrator"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "game-of-jobs-project.jpg",
+      "images": null,
       "links": {
         "github": "",
         "preview": "https://gameofjobs.org/"
@@ -209,8 +243,10 @@
       "name": "Rock&Sun",
       "date": "2019-11-05",
       "tags": ["webdesign", "figma", "illustrator", "after effects"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": null,
       "thumbnail": "rock-sun-project.jpg",
+      "images": null,
       "links": {
         "github": "",
         "preview": ""
@@ -221,9 +257,10 @@
       "name": "Domaine Burdigala",
       "date": "2019-10-02",
       "tags": ["webdesign", "photoshop", "illustrator"],
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "description": "L'objectif a été de réaliser la refonte du site internet d'un domaine viticole bordelais. Proposition et mise en place d'outils visant à améliorer leur communication visuelle. Seule restriction, leur logo devait être conservé.",
       "thumbnail": "burdigala-project.jpg",
-      "images": ["burdigala-1.jpg", "burdigala-2.jpg"],
+      "images": ["burdigala-1.jpg", "burdigala-2.jpg", "burdigala-3.jpg"],
       "links": {
         "github": "",
         "preview": ""

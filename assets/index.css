@@ -3,6 +3,7 @@
   --bg-primary: hsl(217, 46%, 37%);
   --bg-primary-lighten: hsl(0, 0%, 95.7%);
   --bg-dark: hsl(0, 0%, 16%);
+  --bg-dark-lighten: hsl(0, 0%, 87%);
   --bg-white: hsl(0, 0%, 100%);
   /* font */
   --font-family: "Poppins", sans-serif;

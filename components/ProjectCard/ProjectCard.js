@@ -12,6 +12,7 @@ export default class ProjectCard extends LitElement {
     name: { type: String },
     date: { type: String },
     tags: { type: Array },
+    shortDescription: { type: String },
     description: { type: String },
     thumbnail: { type: String },
     images: { type: Array },
@@ -27,13 +28,17 @@ export default class ProjectCard extends LitElement {
   render() {
     return html`
       <article class="project-card">
-      <modal-component></modal-component>
+        <modal-component 
+          .images=${this.images}
+          .description=${this.description}
+          >
+        </modal-component>
         ${
           this.images
             ? html`<button
                 class="project-card__see-more"
-                aria-label="Fermer la modale"
-                title="Fermer la modale"
+                aria-label="Voir plus de contenu"
+                title="Voir plus de contenu"
                 @click=${() => this.handleModal()}
               >
                 voir plus
@@ -87,7 +92,7 @@ export default class ProjectCard extends LitElement {
               ></span>`
         }
         </div>
-        <p class="project-card__description">${this.description}</p>
+        <p class="project-card__description">${this.shortDescription}</p>
         <div class="project-card__tags">${this.tags.map((tag) =>
           tag != "frontend" && tag != "webdesign" && tag != "gestion"
             ? html` <span class="project-card__tag">${tag}</span> `
@@ -100,8 +105,5 @@ export default class ProjectCard extends LitElement {
   handleModal() {
     const modal = this.shadowRoot.querySelector("modal-component");
     modal.open = true;
-    modal.title = "Super Modal 🚀";
-    modal.text = `More than fill in with data !`;
-    modal.images = this.images;
   }
 }

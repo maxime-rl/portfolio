@@ -6,9 +6,8 @@ import { sharedStyles } from "../../helpers/sharedStyles";
 export default class Modal extends LitElement {
   static properties = {
     open: { type: Boolean },
-    title: { type: String },
-    text: { type: String },
     images: { type: Array },
+    description: { type: String },
   };
 
   static styles = [sharedStyles, componentStyles];
@@ -23,12 +22,25 @@ export default class Modal extends LitElement {
       <div class="${classMap({ wrapper: true, open: this.open })}">
         <div class="overlay" @click="${this.close}"></div>
         <div class="dialog">
-          <button class="dialog__btn" @click=${this.handleClick}>
+          <button
+            class="dialog__btn"
+            aria-label="Fermer la modale"
+            title="Fermer la modale"
+            @click=${this.handleClick}
+          >
             <span class="dialog__btn-icon"></span>
           </button>
-          <h3>${this.title}</h3>
-          <p class="content">${this.text}</p>
-          <div class="test">${this.images}</div>
+          <div class="dialog__content">
+            ${this.images != null
+              ? this.images.map(
+                  (image) =>
+                    html` <img src="./images/projects/other/${image}"></img> `
+                )
+              : null}
+            ${this.description != null
+              ? html` <p>${this.description}</p> `
+              : null}
+          </div>
         </div>
       </div>
     `;
