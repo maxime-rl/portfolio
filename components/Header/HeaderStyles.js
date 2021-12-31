@@ -1,42 +1,70 @@
 import { css } from "lit";
 
 export const componentStyles = css`
-  .header {
-    position: relative;
-  }
-
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 80rem) {
     .header {
-      position: relative;
-      display: grid;
-      grid-template-columns: repeat(14, 1fr);
+      margin-bottom: var(--spacing-8);
+      background: var(--bg-white);
+      box-shadow: var(--shadow);
     }
   }
 
+  .header__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
   .header__img {
+    position: absolute;
+    right: -49px;
+    bottom: 16px;
     margin-top: -5rem;
-    width: 100%;
+    width: 62%;
     height: auto;
-    object-fit: cover;
     border-radius: var(--radius-2);
   }
 
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 25rem) {
     .header__img {
-      grid-column: 6/15;
-      margin: 0;
+      width: 55%;
+    }
+  }
+
+  @media screen and (min-width: 30rem) {
+    .header__img {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 30rem) {
+    .header__img {
+      width: 45%;
     }
   }
 
   @media screen and (min-width: 50rem) {
     .header__img {
-      max-height: 350px;
+      width: 40%;
+    }
+  }
+
+  @media screen and (min-width: 50rem) {
+    .header__img {
+      width: 35%;
     }
   }
 
   @media screen and (min-width: 65rem) {
     .header__img {
-      max-height: 430px;
+      width: 35%;
+    }
+  }
+
+  @media screen and (min-width: 80rem) {
+    .header__img {
+      right: 30px;
+      bottom: 0;
+      width: 30%;
     }
   }
 
@@ -46,90 +74,57 @@ export const componentStyles = css`
       flex-direction: column;
       justify-content: center;
       font-size: var(--font-size-7);
-      line-height: 2.3rem;
     }
   }
 
   .header__title {
-    background: white;
     margin-top: -20px;
-    padding: 2rem 1rem 7rem 1.5rem;
+    padding: var(--spacing-8) var(--spacing-4) 12rem var(--spacing-6);
     width: 100%;
     margin-left: -1.5rem;
     margin-bottom: 0;
+    background: white;
+    box-shadow: var(--shadow);
   }
 
   @media screen and (min-width: 30rem) {
     .header__title {
       font-size: var(--font-size-8);
-      line-height: 2.4rem;
     }
   }
 
   @media screen and (min-width: 35rem) {
     .header__title {
       font-size: var(--font-size-9);
-      line-height: 2.7rem;
     }
   }
 
   @media screen and (min-width: 40rem) {
     .header__title {
-      position: absolute;
-      margin: 0;
-      padding: var(--spacing-6) var(--spacing-4);
-      width: auto;
-      top: 50%;
-      left: var(--spacing-4);
-      transform: translateY(-50%);
-      font-size: var(--font-size-8);
-      line-height: 2.4rem;
-      background: var(--bg-white);
-      border-radius: var(--radius-2);
+      font-size: var(--font-size-10);
     }
   }
 
   @media screen and (min-width: 55rem) {
     .header__title {
-      padding: var(--spacing-7) var(--spacing-4);
-      font-size: var(--font-size-9);
-      line-height: 2.8rem;
-    }
-  }
-
-  @media screen and (min-width: 60rem) {
-    .header__title {
-      padding: var(--spacing-8) var(--spacing-6);
-    }
-  }
-
-  @media screen and (min-width: 70rem) {
-    .header__title {
-      font-size: var(--font-size-10);
-      line-height: 3rem;
+      padding: 3rem var(--spacing-4) 10rem var(--spacing-6);
+      font-size: var(--font-size-13);
     }
   }
 
   @media screen and (min-width: 80rem) {
     .header__title {
-      padding: var(--spacing-9) var(--spacing-6);
-      left: var(--spacing-8);
-      font-size: var(--font-size-11);
-      line-height: 3.5rem;
+      margin: 0;
+      padding: 3rem 0 8rem 0;
+      background: transparent;
+      box-shadow: none;
+      font-size: var(--font-size-13);
     }
   }
 
-  @media screen and (min-width: 90rem) {
+  @media screen and (min-width: 100rem) {
     .header__title {
-      padding: var(--spacing-10) var(--spacing-7);
-    }
-  }
-
-  @@media screen and (min-width: 100rem) {
-    .header__title {
-      padding: var(--spacing-11) var(--spacing-11);
-      font-size: var(--font-size-12);
-      line-height: 3.8rem;
+      font-size: var(--font-size-16);
     }
   }
 
@@ -138,22 +133,58 @@ export const componentStyles = css`
     overflow: hidden;
   }
 
+  @media screen and (min-width: 25rem) {
+    .header__title > span {
+      line-height: 2.4rem;
+    }
+  }
+
+  @media screen and (min-width: 30rem) {
+    .header__title > span {
+      line-height: 2.6rem;
+    }
+  }
+
+  @media screen and (min-width: 35rem) {
+    .header__title > span {
+      line-height: 2.9rem;
+    }
+  }
+
+  @media screen and (min-width: 35rem) {
+    .header__title > span {
+      line-height: 3.2rem;
+    }
+  }
+
+  @media screen and (min-width: 55rem) {
+    .header__title > span {
+      line-height: 4.1rem;
+    }
+  }
+
+  @media screen and (min-width: 100rem) {
+    .header__title > span {
+      line-height: 5rem;
+    }
+  }
+
   .header__title > span:nth-child(2) span {
-    animation-delay: 200ms;
+    animation-delay: 150ms;
   }
 
   .header__title > span:nth-child(3) span {
-    animation-delay: 400ms;
+    animation-delay: 300ms;
   }
 
   .header__title > span:nth-child(4) span {
-    animation-delay: 600ms;
+    animation-delay: 450ms;
   }
 
   .header__title > span > span {
     display: block;
     transform: translateY(100%);
-    animation: reveal 700ms ease forwards;
+    animation: reveal 500ms ease forwards;
   }
 
   @keyframes reveal {

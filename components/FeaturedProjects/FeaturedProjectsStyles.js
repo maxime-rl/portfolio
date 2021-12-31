@@ -79,7 +79,8 @@ export const componentStyles = css`
   }
 
   .btn-filter {
-    padding: 0 0.5rem 0.11rem 0.5rem;
+    padding: 0 var(--spacing-2);
+    height: 1.3rem;
     background-color: var(--bg-white);
     color: var(--bg-primary);
     border-radius: var(--radius-1);

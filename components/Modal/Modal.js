@@ -11,7 +11,7 @@ export default class Modal extends LitElement {
   static properties = {
     open: { type: Boolean },
     name: { type: String },
-    images: { type: Array },
+    medias: { type: Array },
     description: { type: String },
   };
 
@@ -36,19 +36,29 @@ export default class Modal extends LitElement {
             <span class="dialog__btn-icon"></span>
           </button>
           <div class="dialog__content">
-            ${this.images != null
-              ? this.images.map(
-                  (image) =>
-                    html` 
+            ${this.medias != null
+              ? this.medias.map((media) =>
+                  media.includes("youtube")
+                    ? html` <div class="dialog__video-wrapper">
+                        <div class="dialog__video">
+                          <iframe
+                            src="${media}"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            width="560"
+                            height="315"
+                          ></iframe>
+                        </div>
+                      </div>`
+                    : html` 
                     <img 
-                      src="./images/projects/other/${image}" 
+                      src="./images/projects/other/${media}" 
                       alt="Miniature servant de description approfondie du projet ${this.name}" 
                       width="460" height="205">
                     </img> `
                 )
               : null}
             ${this.description != null
-              ? html` <p>${this.description}</p> `
+              ? html` <p class="dialog__description">${this.description}</p> `
               : null}
           </div>
         </div>

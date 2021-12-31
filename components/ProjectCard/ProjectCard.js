@@ -16,7 +16,7 @@ export default class ProjectCard extends LitElement {
     description: { type: String },
     thumbnail: { type: String },
     alt: { type: String },
-    images: { type: Array },
+    medias: { type: Array },
     links: { type: Array },
   };
 
@@ -30,7 +30,7 @@ export default class ProjectCard extends LitElement {
     return html`
       <article class="project-card">
         ${
-          this.images
+          this.medias
             ? html`<button
                   class="project-card__see-more"
                   aria-label="Voir plus de contenu"
@@ -41,7 +41,7 @@ export default class ProjectCard extends LitElement {
                 </button>
                 <modal-component
                   .name=${this.name}
-                  .images=${this.images}
+                  .medias=${this.medias}
                   .description=${this.description}
                 >
                 </modal-component>`

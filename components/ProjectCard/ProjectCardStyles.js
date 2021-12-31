@@ -16,14 +16,27 @@ export const componentStyles = css`
     box-shadow: var(--shadow);
   }
 
-  .project-card__see-more {
+  .project-card__see-more,
+  .project-card__work-in-progress {
     position: absolute;
     top: 0.8rem;
+    padding: 0 var(--spacing-2);
+    height: 1.3rem;
+    border-radius: var(--radius-1);
+  }
+
+  .project-card__work-in-progress {
+    right: 0.8rem;
+    font-size: var(--font-size-1);
+    line-height: initial;
+    background: var(--bg-primary);
+    color: var(--bg-white);
+  }
+
+  .project-card__see-more {
     left: 0.8rem;
-    padding: 0 0.5rem 0.11rem 0.5rem;
     background-color: var(--bg-white);
     color: var(--bg-primary);
-    border-radius: var(--radius-1);
     box-shadow: var(--shadow);
     transition: all 0.2s;
   }
@@ -32,18 +45,6 @@ export const componentStyles = css`
     background-color: var(--bg-primary);
     color: var(--bg-white);
     transition: all 0.2s;
-  }
-
-  .project-card__work-in-progress {
-    position: absolute;
-    padding: 0 var(--spacing-2) 0.11rem var(--spacing-2);
-    top: 0.8rem;
-    right: 0.8rem;
-    font-size: var(--font-size-1);
-    line-height: initial;
-    background: var(--bg-primary);
-    color: var(--bg-white);
-    border-radius: var(--radius-1);
   }
 
   .project-card__img {
@@ -187,7 +188,8 @@ export const componentStyles = css`
   }
 
   .project-card__tag {
-    padding: 0 var(--spacing-2) 0.11rem var(--spacing-2);
+    padding: 0 var(--spacing-2);
+    height: 1.3rem;
     font-size: var(--font-size-1);
     line-height: initial;
     background-color: var(--bg-primary-lighten);
