@@ -7,7 +7,7 @@
       "tags": ["frontend", "web-components", "lit"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "portfolio-project.jpg",
+      "thumbnail": "portfolio-project.webp",
       "alt": "Grille de projets de mon portfolio",
       "medias": null,
       "links": {
@@ -22,7 +22,7 @@
       "tags": ["frontend", "jquery -> react"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "hrnet-project.jpg",
+      "thumbnail": "hrnet-project.webp",
       "alt": "Tableau des employés actuellement enregistrés dans l'application, avec système de recherches, de tri et de pagination",
       "medias": null,
       "links": {
@@ -37,7 +37,7 @@
       "tags": ["frontend", "react", "package-npm"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "package-npm.jpg",
+      "thumbnail": "package-npm.webp",
       "alt": "Démonstration du package déployé, une modale accessible contenant un titre et un formulaire",
       "medias": null,
       "links": {
@@ -52,7 +52,7 @@
       "tags": ["frontend", "react", "redux", "rest-api"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "argent-bank-project.jpg",
+      "thumbnail": "argent-bank-project.webp",
       "alt": "Page principale de l'application, avec son entête est une bannière d'informations",
       "medias": null,
       "links": {
@@ -67,7 +67,7 @@
       "tags": ["frontend", "react", "axios", "recharts"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "sport-see-project.jpg",
+      "thumbnail": "sport-see-project.webp",
       "alt": "Dashboard d'un utilisateur de l'application, avec ses sessions sportives sous forme de graphiques",
       "medias": null,
       "links": {
@@ -82,7 +82,7 @@
       "tags": ["frontend", "react", "sass"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "kasa-project.jpg",
+      "thumbnail": "kasa-project.webp",
       "alt": "Page d'une propriété du 11ème arrondissement en location, avec une photo et quelques informations utiles",
       "medias": null,
       "links": {
@@ -97,7 +97,7 @@
       "tags": ["gestion", "use-cases", "user-stories", "figma"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "learn-home-project.jpg",
+      "thumbnail": "learn-home-project.webp",
       "alt": "Maquette d'une des vues de la liste des taches d'un élève de l'application",
       "medias": null,
       "links": {
@@ -112,7 +112,7 @@
       "tags": ["frontend", "jest", "jquery"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "billed-project.jpg",
+      "thumbnail": "billed-project.webp",
       "alt": "Formulaire d'ajout d'une note de frais d'un compte employé",
       "medias": null,
       "links": {
@@ -127,7 +127,7 @@
       "tags": ["frontend", "vanilla-js", "sass", "algorithme"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "les-petits-plats-project.jpg",
+      "thumbnail": "les-petits-plats-project.webp",
       "alt": "Page principale de l'application avec le select des ingrédients déplié, près à être séléctionné pour une recherche",
       "medias": null,
       "links": {
@@ -142,7 +142,7 @@
       "tags": ["frontend", "vanilla-js", "sass", "accessibilité"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "fish-eye-project.jpg",
+      "thumbnail": "fish-eye-project.webp",
       "alt": "Profil d'un photographe affichant une grille de ses projets/photos, avec un select pour filtrer les photos",
       "medias": null,
       "links": {
@@ -157,7 +157,7 @@
       "tags": ["frontend", "vanilla-js"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "form-validation-project.jpg",
+      "thumbnail": "form-validation-project.webp",
       "alt": "Interface d'un formulaire servant de test de validation",
       "medias": null,
       "links": {
@@ -172,7 +172,7 @@
       "tags": ["frontend", "intégration", "sass", "animation"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "ohmyfood-project.jpg",
+      "thumbnail": "ohmyfood-project.webp",
       "alt": "Page principale de l'application affichant les quatres restaurants actuellement disponibles pour une réservation",
       "medias": null,
       "links": {
@@ -187,7 +187,7 @@
       "tags": ["frontend", "intégration", "flex", "grid"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "reservia-project.jpg",
+      "thumbnail": "reservia-project.webp",
       "alt": "Filtres et grille de logements disponiblessur Marseille, ainsi que les logements les plus  populaires !",
       "medias": null,
       "links": {
@@ -202,7 +202,7 @@
       "tags": ["frontend", "angular", "ionic", "sass", "ui-ux"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": null,
-      "thumbnail": "neonoos-project.jpg",
+      "thumbnail": "neonoos-project.webp",
       "alt": "Mockup représentant une cartographie d'un exemple d'itineraire de l'application Neonoos, ainsi que son fil d'actualité",
       "medias": null,
       "links": {
@@ -217,9 +217,9 @@
       "tags": ["frontend", "gestion", "wordpress", "bootstrap"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": "Conception et développement d'une plateforme e-commerce pour une marque de custom de sneakers ! (création d'un thème Wordpress, champs ACF)",
-      "thumbnail": "penstyle-shoes-project.jpg",
+      "thumbnail": "penstyle-shoes-project.webp",
       "alt": "Logo de la marque Penstyle Shoes, rouge sur fond blanc",
-      "medias": ["penstyle-shoes-1.jpg", "penstyle-shoes-2.jpg"],
+      "medias": ["penstyle-shoes-1.webp", "penstyle-shoes-2.webp"],
       "links": {
         "github": "",
         "preview": "https://penstyleshoes.com/"
@@ -232,9 +232,9 @@
       "tags": ["webdesign", "ui-ux", "figma", "illustrator"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": "Ruze est un réseau social permettant de favoriser le réseautage entre musiciens de rue. L'enjeu ici a été de livrer une maquette exploitable avec une deadline très serrée. Création de l'identité visuelle ainsi que l'interface utilisateur.",
-      "thumbnail": "ruze-project.png",
+      "thumbnail": "ruze-project.webp",
       "alt": "Mockup représentant trois interfaces de l'application, le login, l'accueil, et la page d'un artiste",
-      "medias": ["ruze-1.jpg", "ruze-2.jpg"],
+      "medias": ["ruze-1.webp", "ruze-2.webp"],
       "links": {
         "github": "",
         "preview": "https://www.figma.com/proto/NnniTaxTFv4v9UW2TVFK2G/SPRINT-10-01-20?node-id=3%3A2&scaling=scale-down"
@@ -247,11 +247,11 @@
       "tags": ["frontend", "wordpress", "illustrator"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": "Participation à la création de différents supports de communication visuelle. Projet géré en méthodologie agile avec une deadline très serrée, du logotypage à l'intégration sur WordPress.",
-      "thumbnail": "game-of-jobs-project.jpg",
+      "thumbnail": "game-of-jobs-project.webp",
       "alt": "Logo de la plateforme GameOfJobs poussé par l'Afpa, coloré, du bleu au vert sur fond blanc",
       "medias": [
         "https://www.youtube.com/embed/saueTqhhZtk?enablejsapi=1&html5=1&rel=0",
-        "game-of-jobs-1.jpg"
+        "game-of-jobs-1.webp"
       ],
       "links": {
         "github": "",
@@ -265,11 +265,11 @@
       "tags": ["webdesign", "figma", "illustrator", "after effects"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": "Modernisation du site internet Rock & Sun, organisateur de voyages sportifs, tout en conservant leur identité visuelle. Maquettage et proposition de mise en situation avec du branding, mockup publicitaire et d'un teaser en motion design afin de booster leur image de marque dans le milieu sportif.",
-      "thumbnail": "rock-sun-project.jpg",
+      "thumbnail": "rock-sun-project.webp",
       "alt": "Mockup représentant l'entête de la page d'accueil du site, ainsi qu'une carte de visite à l'effigie de la marque",
       "medias": [
         "https://www.youtube.com/embed/XPi_QUxmiKc?enablejsapi=1&html5=1&rel=0",
-        "rock&sun-1.jpg"
+        "rock&sun-1.webp"
       ],
       "links": {
         "github": "",
@@ -283,9 +283,9 @@
       "tags": ["webdesign", "photoshop", "illustrator"],
       "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "description": "L'objectif a été de réaliser la refonte du site internet d'un domaine viticole bordelais. Proposition et mise en place d'outils visant à améliorer leur communication visuelle. Seule restriction, leur logo devait être conservé.",
-      "thumbnail": "burdigala-project.jpg",
+      "thumbnail": "burdigala-project.webp",
       "alt": "Mockup du webdesign Burdigala, représentant l'entête sur un écran Apple",
-      "medias": ["burdigala-1.jpg", "burdigala-2.jpg", "burdigala-3.jpg"],
+      "medias": ["burdigala-1.webp", "burdigala-2.webp", "burdigala-3.webp"],
       "links": {
         "github": "",
         "preview": ""
