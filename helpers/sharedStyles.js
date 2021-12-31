@@ -11,8 +11,15 @@ export const sharedStyles = css`
   }
 
   h1 {
-    font-size: var(--font-size-6);
-    line-height: 2rem;
+    font-size: var(--font-size-5);
+    line-height: 1.8rem;
+  }
+
+  @media screen and (min-width: 20rem) {
+    h1 {
+      font-size: var(--font-size-6);
+      line-height: 2rem;
+    }
   }
 
   h2 {

@@ -11,7 +11,7 @@ export default class InfiniteScrollBanner extends LitElement {
 
   render() {
     return html`
-      <div class="infinite-scroll page-width">
+      <div class="infinite-scroll">
         <div class="infinite-scroll__img"></div>
       </div>
     `;

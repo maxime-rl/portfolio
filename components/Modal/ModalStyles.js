@@ -47,6 +47,11 @@ export const componentStyles = css`
     margin-top: var(--spacing-6);
   }
 
+  .dialog__description {
+    padding-right: var(--spacing-4);
+    font-weight: 300;
+  }
+
   .dialog__content::-webkit-scrollbar {
     width: 5px;
   }
@@ -83,5 +88,28 @@ export const componentStyles = css`
     filter: invert(30%) sepia(67%) saturate(3969%) hue-rotate(346deg)
       brightness(93%) contrast(106%);
     transition: filter 0.2s;
+  }
+
+  .dialog__video-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+  .dialog__video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius-1);
+  }
+
+  .dialog__video iframe,
+  .dialog__video object,
+  .dialog__video embed {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 100%;
+    height: 100%;
   }
 `;
