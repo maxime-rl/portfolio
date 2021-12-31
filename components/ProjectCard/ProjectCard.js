@@ -59,7 +59,7 @@ export default class ProjectCard extends LitElement {
         <div class="project-card__links">
         ${
           this.links.preview
-            ? html`<a
+            ? html` <a
                 class="project-card__link project-card__link--preview focus-visible"
                 href="${this.links.preview}"
                 target="_blank"
@@ -71,14 +71,15 @@ export default class ProjectCard extends LitElement {
                   aria-hidden="true"
                 ></span>
               </a>`
-            : html`<span
+            : html` <span
                 class="project-card__icon project-card__icon--preview project-card__icon--not-available"
                 aria-hidden="true"
-              ></span>`
+              >
+              </span>`
         }
         ${
           this.links.github
-            ? html`<a
+            ? html` <a
                 class="project-card__link project-card__link--github focus-visible"
                 href="${this.links.github}"
                 target="_blank"
@@ -88,12 +89,14 @@ export default class ProjectCard extends LitElement {
                 <span
                   class="project-card__icon project-card__icon--github"
                   aria-hidden="true"
-                ></span>
+                >
+                </span>
               </a>`
             : html` <span
                 class="project-card__icon project-card__icon--github project-card__icon--not-available"
                 aria-hidden="true"
-              ></span>`
+              >
+              </span>`
         }
         </div>
         <p class="project-card__description">${this.shortDescription}</p>

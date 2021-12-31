@@ -36,28 +36,29 @@ export default class Modal extends LitElement {
             <span class="dialog__btn-icon"></span>
           </button>
           <div class="dialog__content">
-            ${this.medias != null
-              ? this.medias.map((media) =>
-                  media.includes("youtube")
-                    ? html` <div class="dialog__video-wrapper">
-                        <div class="dialog__video">
-                          <iframe
-                            src="${media}"
-                            width="560"
-                            height="315"
-                          ></iframe>
-                        </div>
-                      </div>`
-                    : html` 
-                    <img 
-                      src="./images/projects/other/${media}" 
-                      alt="Miniature servant de description approfondie du projet ${this.name}" 
-                      width="460" height="205">
-                    </img> `
-                )
-              : null}
             ${this.description != null
               ? html` <p class="dialog__description">${this.description}</p> `
+              : null}
+            ${this.medias != null
+              ? this.medias.map((media) =>
+                  media.includes(
+                    ".webp" || ".jpg" || ".png" || ".gif" || ".svg"
+                  )
+                    ? html`<img 
+                          src="./images/projects/other/${media}" 
+                          alt="Miniature servant de description approfondie du projet ${this.name}" 
+                          width="460" height="205">
+                        </img>
+                      `
+                    : html`<a
+                        href="${media}"
+                        class="dialog__link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Voir la vidéo de présentation
+                      </a> `
+                )
               : null}
           </div>
         </div>
