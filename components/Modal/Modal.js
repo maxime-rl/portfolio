@@ -43,7 +43,6 @@ export default class Modal extends LitElement {
                         <div class="dialog__video">
                           <iframe
                             src="${media}"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             width="560"
                             height="315"
                           ></iframe>
