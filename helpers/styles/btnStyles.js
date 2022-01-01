@@ -10,6 +10,7 @@ export const btnStyles = css`
     box-shadow: var(--shadow);
     transition: all 0.2s;
   }
+
   .btn:hover {
     background-color: var(--bg-primary);
     color: var(--bg-white);

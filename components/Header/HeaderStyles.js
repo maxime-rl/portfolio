@@ -21,6 +21,7 @@ export const componentStyles = css`
     width: 62%;
     height: auto;
     border-radius: var(--radius-2);
+    animation: opacity 1.5s ease;
   }
 
   @media screen and (min-width: 25rem) {
@@ -186,14 +187,5 @@ export const componentStyles = css`
 
   .header__title-strong {
     color: var(--bg-primary);
-  }
-
-  @keyframes reveal {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
   }
 `;

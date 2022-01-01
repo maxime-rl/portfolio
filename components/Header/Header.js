@@ -1,13 +1,13 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./HeaderStyles";
-import { sharedStyles } from "../../helpers/styles/sharedStyles";
+import { sharedStyles, keyframesStyles } from "../../helpers";
 
 /**
  * @name Header
  * @returns {HTMLElement}
  */
 export default class Header extends LitElement {
-  static styles = [sharedStyles, componentStyles];
+  static styles = [sharedStyles, keyframesStyles, componentStyles];
 
   render() {
     return html`
