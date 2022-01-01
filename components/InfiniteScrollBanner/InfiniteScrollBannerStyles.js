@@ -31,13 +31,4 @@ export const componentStyles = css`
       animation: slide 200s linear infinite;
     }
   }
-
-  @keyframes slide {
-    0% {
-      transform: translate(0);
-    }
-    100% {
-      transform: translate(-3840px);
-    }
-  }
 `;

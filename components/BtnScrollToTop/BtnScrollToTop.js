@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./BtnScrollToTopStyles";
-import { sharedStyles } from "../../helpers/styles/sharedStyles";
+import { sharedStyles } from "../../helpers";
 
 /**
  * @name BtnScrollToTop

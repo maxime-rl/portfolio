@@ -18,6 +18,15 @@ export const keyframesStyles = css`
       transform: translateY(0);
     }
   }
+
+  @keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-3840px);
+    }
+  }
 `;
 
 export default keyframesStyles;

@@ -1,13 +1,13 @@
 import { LitElement, html, css } from "lit";
 import { componentStyles } from "./InfiniteScrollBannerStyles";
-import { sharedStyles } from "../../helpers/styles/sharedStyles";
+import { sharedStyles, keyframesStyles } from "../../helpers";
 
 /**
  * @name InfiniteScrollBanner
  * @returns {HTMLElement}
  */
 export default class InfiniteScrollBanner extends LitElement {
-  static styles = [sharedStyles, componentStyles];
+  static styles = [sharedStyles, keyframesStyles, componentStyles];
 
   render() {
     return html`
