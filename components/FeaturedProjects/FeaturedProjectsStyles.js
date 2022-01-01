@@ -1,45 +1,58 @@
 import { css } from "lit";
 
 export const componentStyles = css`
-  .featured-projects-wrapper {
+  .featured-projects__length {
+    position: relative;
+    bottom: 13px;
+    font-size: var(--font-size-1);
+    font-weight: 300;
+  }
+
+  @media screen and (min-width: 80rem) {
+    .featured-projects__length {
+      bottom: 22px;
+    }
+  }
+
+  .featured-projects__wrapper {
     display: grid;
     gap: 1rem;
   }
 
   @media screen and (min-width: 40rem) {
-    .featured-projects-wrapper {
+    .featured-projects__wrapper {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
     }
   }
 
   @media screen and (min-width: 60rem) {
-    .featured-projects-wrapper {
+    .featured-projects__wrapper {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
   @media screen and (min-width: 80rem) {
-    .featured-projects-wrapper {
+    .featured-projects__wrapper {
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
     }
   }
 
-  .featured-projects-header {
+  .featured-projects__filters-and-sort {
     display: flex;
     flex-direction: column;
   }
 
   @media screen and (min-width: 33rem) {
-    .featured-projects-header {
+    .featured-projects__filters-and-sort {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
   }
 
-  .featured-projects-filter {
+  .featured-projects__filter {
     display: flex;
     flex-wrap: wrap;
     order: 1;
@@ -48,7 +61,7 @@ export const componentStyles = css`
   }
 
   @media screen and (min-width: 33rem) {
-    .featured-projects-filter {
+    .featured-projects__filter {
       order: 0;
       padding: 0;
     }

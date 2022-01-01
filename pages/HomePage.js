@@ -12,11 +12,8 @@ export class HomePage extends LitElement {
     return html`
       <navbar-component></navbar-component>
       <header-component></header-component>
-      <main>
-        <section class="page-width">
-          <h2>Projets</h2>
-          <featured-projects></featured-projects>
-        </section>
+      <main class="page-width">
+        <featured-projects></featured-projects>
       </main>
       <btn-top></btn-top>
       <infinite-scroll></infinite-scroll>
