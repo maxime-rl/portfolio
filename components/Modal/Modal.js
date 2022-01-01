@@ -1,7 +1,7 @@
 import { LitElement, html } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 import { componentStyles } from "./ModalStyles";
-import { sharedStyles } from "../../helpers/sharedStyles";
+import { sharedStyles } from "../../helpers";
 
 /**
  * @name Modal
@@ -56,7 +56,7 @@ export default class Modal extends LitElement {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Voir la vidéo de présentation
+                        Vidéo de présentation
                       </a> `
                 )
               : null}

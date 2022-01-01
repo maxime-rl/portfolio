@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./NetworkListStyles";
-import { sharedStyles } from "../../helpers/sharedStyles";
+import { sharedStyles } from "../../helpers";
 
 import data from "../../assets/data.json";
 

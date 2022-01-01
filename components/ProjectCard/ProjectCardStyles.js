@@ -16,35 +16,18 @@ export const componentStyles = css`
     box-shadow: var(--shadow);
   }
 
-  .project-card__see-more,
-  .project-card__work-in-progress {
+  .btn--see-more,
+  .tag--primary {
     position: absolute;
     top: 0.8rem;
-    padding: 0 var(--spacing-2);
-    height: 1.3rem;
-    border-radius: var(--radius-1);
   }
 
-  .project-card__work-in-progress {
-    right: 0.8rem;
-    font-size: var(--font-size-1);
-    line-height: initial;
-    background: var(--bg-primary);
-    color: var(--bg-white);
-  }
-
-  .project-card__see-more {
+  .btn--see-more {
     left: 0.8rem;
-    background-color: var(--bg-white);
-    color: var(--bg-primary);
-    box-shadow: var(--shadow);
-    transition: all 0.2s;
   }
 
-  .project-card__see-more:hover {
-    background-color: var(--bg-primary);
-    color: var(--bg-white);
-    transition: all 0.2s;
+  .tag--primary {
+    right: 0.8rem;
   }
 
   .project-card__img {

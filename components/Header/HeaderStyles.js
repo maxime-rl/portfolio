@@ -5,7 +5,6 @@ export const componentStyles = css`
     .header {
       margin-bottom: var(--spacing-8);
       background: var(--bg-white);
-      box-shadow: var(--shadow);
     }
   }
 
@@ -22,6 +21,7 @@ export const componentStyles = css`
     width: 62%;
     height: auto;
     border-radius: var(--radius-2);
+    animation: opacity 1.5s ease;
   }
 
   @media screen and (min-width: 25rem) {
@@ -84,7 +84,6 @@ export const componentStyles = css`
     margin-left: -1.5rem;
     margin-bottom: 0;
     background: white;
-    box-shadow: var(--shadow);
   }
 
   @media screen and (min-width: 30rem) {
@@ -117,7 +116,6 @@ export const componentStyles = css`
       margin: 0;
       padding: 3rem 0 8rem 0;
       background: transparent;
-      box-shadow: none;
       font-size: var(--font-size-13);
     }
   }
@@ -187,12 +185,7 @@ export const componentStyles = css`
     animation: reveal 500ms ease forwards;
   }
 
-  @keyframes reveal {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  .header__title-strong {
+    color: var(--bg-primary);
   }
 `;

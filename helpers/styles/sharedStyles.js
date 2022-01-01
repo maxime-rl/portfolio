@@ -85,3 +85,5 @@ export const sharedStyles = css`
     width: 3.7rem;
   }
 `;
+
+export default sharedStyles;
