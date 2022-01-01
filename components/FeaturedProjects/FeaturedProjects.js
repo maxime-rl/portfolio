@@ -149,22 +149,19 @@ export default class FeaturedProjects extends LitElement {
   getAllProjects(projects) {
     this.filteredProjectsArr = [];
     this.toggleEnabledFilter();
-    if (this.isAscending) {
-      this.sortedByDate((this.isAscending = !this.isAscending));
-    }
 
     for (let project of projects) {
       this.filteredProjectsArr.push(project);
       this.projects = [...this.filteredProjectsArr];
     }
+
+    if (this.isAscending) {
+      this.sortedByDate(this.isAscending);
+    }
   }
 
   filteredProjects(projects, matchTag) {
     this.filteredProjectsArr = [];
-
-    if (this.isAscending) {
-      this.sortedByDate((this.isAscending = !this.isAscending));
-    }
 
     switch (matchTag) {
       case "frontend":
@@ -183,6 +180,10 @@ export default class FeaturedProjects extends LitElement {
         this.filteredProjectsArr.push(project);
         this.projects = [...this.filteredProjectsArr];
       }
+    }
+
+    if (this.isAscending) {
+      this.sortedByDate(this.isAscending);
     }
   }
 

@@ -5,7 +5,6 @@ export const componentStyles = css`
     .header {
       margin-bottom: var(--spacing-8);
       background: var(--bg-white);
-      box-shadow: var(--shadow);
     }
   }
 
@@ -84,7 +83,6 @@ export const componentStyles = css`
     margin-left: -1.5rem;
     margin-bottom: 0;
     background: white;
-    box-shadow: var(--shadow);
   }
 
   @media screen and (min-width: 30rem) {
@@ -117,7 +115,6 @@ export const componentStyles = css`
       margin: 0;
       padding: 3rem 0 8rem 0;
       background: transparent;
-      box-shadow: none;
       font-size: var(--font-size-13);
     }
   }

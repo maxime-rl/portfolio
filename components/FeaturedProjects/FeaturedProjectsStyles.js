@@ -50,6 +50,7 @@ export const componentStyles = css`
   @media screen and (min-width: 33rem) {
     .featured-projects-filter {
       order: 0;
+      padding: 0;
     }
   }
 
