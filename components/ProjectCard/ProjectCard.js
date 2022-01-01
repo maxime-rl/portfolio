@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit";
 import { componentStyles } from "./ProjectCardStyles";
-import { sharedStyles } from "../../helpers/sharedStyles";
+import { sharedStyles, btnStyles, tagStyles } from "../../helpers";
 
 /**
  * @name ProjectCard
@@ -20,7 +20,7 @@ export default class ProjectCard extends LitElement {
     links: { type: Array },
   };
 
-  static styles = [sharedStyles, componentStyles];
+  static styles = [sharedStyles, btnStyles, tagStyles, componentStyles];
 
   constructor() {
     super();
@@ -32,7 +32,7 @@ export default class ProjectCard extends LitElement {
         ${
           this.medias
             ? html`<button
-                  class="project-card__see-more"
+                  class="btn btn--see-more"
                   aria-label="Voir plus de contenu"
                   title="Voir plus de contenu"
                   @click=${() => this.handleModal()}
@@ -49,7 +49,7 @@ export default class ProjectCard extends LitElement {
         }
         ${
           new Date(this.date) > new Date()
-            ? html`<div class="project-card__work-in-progress">en cours</div>`
+            ? html`<div class="tag tag--primary">en cours</div>`
             : null
         }
         <img class="project-card__img" src="./images/projects/${
@@ -102,7 +102,7 @@ export default class ProjectCard extends LitElement {
         <p class="project-card__description">${this.shortDescription}</p>
         <div class="project-card__tags">${this.tags.map((tag) =>
           tag != "frontend" && tag != "webdesign" && tag != "gestion"
-            ? html` <span class="project-card__tag">${tag}</span> `
+            ? html` <span class="tag">${tag}</span> `
             : null
         )}</div>
       </article>

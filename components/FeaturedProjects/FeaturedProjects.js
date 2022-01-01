@@ -1,7 +1,7 @@
 import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 import { componentStyles } from "./FeaturedProjectsStyles";
-import { sharedStyles } from "../../helpers/sharedStyles";
+import { sharedStyles, btnStyles } from "../../helpers";
 
 import data from "../../assets/data.json";
 
@@ -23,6 +23,7 @@ export default class FeaturedProjects extends LitElement {
 
   static styles = [
     sharedStyles,
+    btnStyles,
     componentStyles,
     css`
       .enabledAll,
@@ -54,7 +55,7 @@ export default class FeaturedProjects extends LitElement {
           <button
             class="btn-toggle-filters"
             aria-label="Afficher les filtres"
-            title="Afficher les filtres"
+            title="Afficher ou cacher les filtres"
             @click=${() => {
               this.showFilters = !this.showFilters;
             }}
@@ -65,7 +66,7 @@ export default class FeaturedProjects extends LitElement {
           ${this.showFilters
             ? html`
                 <button
-                  class="btn-filter ${classMap({
+                  class="btn ${classMap({
                     enabledAll: this.enabledAll,
                   })}"
                   aria-label="Filtrer et afficher tous les projets"
@@ -75,7 +76,7 @@ export default class FeaturedProjects extends LitElement {
                   tous
                 </button>
                 <button
-                  class="btn-filter ${classMap({
+                  class="btn ${classMap({
                     enabledFrontend: this.enabledFrontend,
                   })}"
                   aria-label="Filtrer et afficher les projets frontend"
@@ -86,7 +87,7 @@ export default class FeaturedProjects extends LitElement {
                   frontend
                 </button>
                 <button
-                  class="btn-filter ${classMap({
+                  class="btn ${classMap({
                     enabledWebdesign: this.enabledWebdesign,
                   })}"
                   aria-label="Filtrer et afficher les projets webdesign"
@@ -97,7 +98,7 @@ export default class FeaturedProjects extends LitElement {
                   webdesign
                 </button>
                 <button
-                  class="btn-filter ${classMap({
+                  class="btn ${classMap({
                     enabledGestion: this.enabledGestion,
                   })}"
                   aria-label="Filtrer et afficher les projets gestion"

@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit";
 import { componentStyles } from "./InfiniteScrollBannerStyles";
-import { sharedStyles } from "../../../helpers/sharedStyles";
+import { sharedStyles } from "../../helpers/styles/sharedStyles";
 
 /**
  * @name InfiniteScrollBanner

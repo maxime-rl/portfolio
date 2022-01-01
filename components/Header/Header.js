@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./HeaderStyles";
-import { sharedStyles } from "../../helpers/sharedStyles";
+import { sharedStyles } from "../../helpers/styles/sharedStyles";
 
 /**
  * @name Header
@@ -16,13 +16,13 @@ export default class Header extends LitElement {
           <h1 class="header__title">
           <span><span>Bienvenue</span></span>
           <span><span>je suis Maxime,</span></span>
-          <span><span>Développeur Frontend</span></span>
-          <span><span>& Webdesigner</span></span>
+          <span><span><strong class="header__title-strong">Développeur</strong> Frontend</span></span>
+          <span><span>& <strong class="header__title-strong">Webdesigner</strong></span></span>
           </h1>
           <img 
             class="header__img" 
             src="./images/profile-photo.png" 
-            alt="photo de profil" 
+            alt="Portrait de face en plan buste sur fond blanc, tee-shirt orange et lunettes de vue noir" 
             width="1000" height="450">
           </img>
         </div>

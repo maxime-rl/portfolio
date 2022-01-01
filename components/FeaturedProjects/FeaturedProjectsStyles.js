@@ -79,22 +79,6 @@ export const componentStyles = css`
     transition: all 0.2s;
   }
 
-  .btn-filter {
-    padding: 0 var(--spacing-2);
-    height: 1.3rem;
-    background-color: var(--bg-white);
-    color: var(--bg-primary);
-    border-radius: var(--radius-1);
-    box-shadow: var(--shadow);
-    transition: all 0.2s;
-  }
-
-  .btn-filter:hover {
-    background-color: var(--bg-primary);
-    color: var(--bg-white);
-    transition: all 0.2s;
-  }
-
   .icon-sort,
   .icon-filter {
     display: inline-block;

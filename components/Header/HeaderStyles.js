@@ -184,6 +184,10 @@ export const componentStyles = css`
     animation: reveal 500ms ease forwards;
   }
 
+  .header__title-strong {
+    color: var(--bg-primary);
+  }
+
   @keyframes reveal {
     0% {
       transform: translateY(100%);
