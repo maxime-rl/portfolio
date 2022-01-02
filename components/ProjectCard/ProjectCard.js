@@ -32,7 +32,7 @@ export default class ProjectCard extends LitElement {
         ${
           this.medias
             ? html`<button
-                  class="btn btn--see-more"
+                  class="btn btn--see-more focus-visible"
                   aria-label="Voir plus de contenu"
                   title="Voir plus de contenu"
                   @click=${() => this.handleModal()}
@@ -49,7 +49,7 @@ export default class ProjectCard extends LitElement {
         }
         ${
           new Date(this.date) > new Date()
-            ? html`<div class="tag tag--primary">en cours</div>`
+            ? html`<div class="tag tag--in-progress">en cours</div>`
             : null
         }
         <img class="project-card__img" src="./images/projects/${

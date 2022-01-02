@@ -187,5 +187,6 @@ export const componentStyles = css`
 
   .header__title-strong {
     color: var(--bg-primary);
+    transition: color 0.2s;
   }
 `;

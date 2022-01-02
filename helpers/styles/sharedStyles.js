@@ -77,12 +77,26 @@ export const sharedStyles = css`
   }
 
   .focus-visible:focus-visible {
-    border: var(--focus-visible);
+    outline: var(--focus-visible);
   }
 
   .site__logo {
     object-fit: contain;
     width: 3.7rem;
+  }
+
+  .sr-only {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    -webkit-clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
   }
 `;
 
