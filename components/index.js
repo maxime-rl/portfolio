@@ -7,3 +7,4 @@ export { default as Modal } from "./Modal/Modal";
 export { default as BtnScrollToTop } from "./BtnScrollToTop/BtnScrollToTop";
 export { default as NetworkList } from "./NetworkList/NetworkList";
 export { default as Footer } from "./Footer/Footer";
+export { default as ThemeToggle } from "./ThemeToggle/ThemeToggle";

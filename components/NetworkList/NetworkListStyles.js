@@ -14,6 +14,10 @@ export const componentStyles = css`
     }
   }
 
+  .network-list__link {
+    border: solid 2px transparent;
+  }
+
   .network-list__icon {
     display: inline-block;
     background-repeat: no-repeat;
@@ -24,8 +28,7 @@ export const componentStyles = css`
   }
 
   .network-list__icon:hover {
-    filter: invert(27%) sepia(69%) saturate(520%) hue-rotate(176deg)
-      brightness(93%) contrast(86%);
+    filter: var(--svg-hover);
     transition: filter 0.2s;
   }
 

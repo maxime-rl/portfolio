@@ -14,4 +14,9 @@ export const componentStyles = css`
     justify-content: space-between;
     align-items: center;
   }
+
+  .navbar__content {
+    display: flex;
+    gap: var(--spacing-3);
+  }
 `;

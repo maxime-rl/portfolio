@@ -83,7 +83,7 @@ export const componentStyles = css`
     width: 100%;
     margin-left: -1.5rem;
     margin-bottom: 0;
-    background: white;
+    background: var(--bg-white);
   }
 
   @media screen and (min-width: 30rem) {
