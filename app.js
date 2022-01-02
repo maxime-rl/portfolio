@@ -9,6 +9,7 @@ import {
   BtnScrollToTop,
   NetworkList,
   Footer,
+  ThemeToggle,
 } from "./components";
 import { HomePage } from "./pages/HomePage";
 
@@ -21,4 +22,5 @@ window.customElements.define("featured-projects", FeaturedProjects);
 window.customElements.define("btn-top", BtnScrollToTop);
 window.customElements.define("network-list", NetworkList);
 window.customElements.define("footer-component", Footer);
+window.customElements.define("theme-toggle", ThemeToggle);
 window.customElements.define("home-page", HomePage);

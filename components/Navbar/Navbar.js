@@ -18,7 +18,10 @@ export default class Nav extends LitElement {
             src="./images/logos/blue-logo.svg"
             alt="logo du site de Maxime Robil-Leprêtre"
           />
-          <network-list></network-list>
+          <div class="navbar__content">
+            <network-list></network-list>
+            <theme-toggle></theme-toggle>
+          </div>
         </div>
       </nav>
     `;
