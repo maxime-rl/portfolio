@@ -49,6 +49,8 @@ export const componentStyles = css`
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding-top: var(--spacing-4);
+      padding-bottom: var(--spacing-1);
     }
   }
 
@@ -57,7 +59,7 @@ export const componentStyles = css`
     flex-wrap: wrap;
     order: 1;
     padding-bottom: var(--spacing-4);
-    gap: 0.8rem;
+    gap: 0.4rem;
   }
 
   @media screen and (min-width: 33rem) {
@@ -70,13 +72,28 @@ export const componentStyles = css`
   .btn-sort,
   .btn-toggle-filters {
     display: flex;
+    align-items: center;
     width: fit-content;
+    height: 1.4rem;
     gap: 0.4rem;
     opacity: 0.7;
   }
 
   .btn-sort {
     padding-bottom: var(--spacing-4);
+  }
+
+  @media screen and (min-width: 33rem) {
+    .btn-toggle-filters {
+      padding-bottom: var(--spacing-4);
+    }
+  }
+
+  @media screen and (min-width: 33rem) {
+    .btn-filter {
+      position: relative;
+      bottom: 0.5rem;
+    }
   }
 
   .btn-sort:hover,

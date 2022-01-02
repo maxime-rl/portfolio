@@ -6,7 +6,6 @@ export const componentStyles = css`
     position: relative;
     width: 54px;
     height: 32px;
-    transform: translateY(-2px);
   }
 
   .theme-toggle-input {
@@ -22,7 +21,7 @@ export const componentStyles = css`
     position: absolute;
     width: 84%;
     height: 14px;
-    top: 63%;
+    top: 50%;
     transform: translateY(-50%);
     border-radius: 1rem;
     background-color: var(--bg-dark);
@@ -37,11 +36,11 @@ export const componentStyles = css`
     width: 1.6rem;
     height: 1.6rem;
     position: absolute;
-    top: 55%;
-    background: var(--bg-white);
+    top: 50%;
+    background-color: var(--bg-white);
     border: 3.5px solid var(--bg-dark);
     border-radius: 50%;
-    transition: transform 300ms ease;
+    transition: all 300ms ease;
   }
 
   :host([theme="blue"]) .theme-toggle-colors {
