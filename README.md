@@ -20,9 +20,6 @@ Site développé en Javascript, à l'aide de légers composants web proposés pa
 
 - [lit](https://lit.dev/docs/getting-started/)
 - [vite](https://vitejs.dev/guide/)
-- [postcss](https://postcss.org/)
-- [postcss-load-config](https://github.com/postcss/postcss-load-config)
-- [autoprefixer](https://github.com/postcss/autoprefixer)
 - [prettier](https://prettier.io/docs/en/index.html)
 
 ### Getting started & usage
