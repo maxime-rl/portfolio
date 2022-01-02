@@ -29,7 +29,7 @@ export default class NetworkList extends LitElement {
               href="${network.link}"
               target="_blank"
               rel="noreferrer"
-              class="network-list__link focus-visible"
+              class="focus-visible"
               title="Voir le profil ${network.name} de Maxime Robil-Leprêtre"
             >
               <span

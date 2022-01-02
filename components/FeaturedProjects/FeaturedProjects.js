@@ -61,7 +61,7 @@ export default class FeaturedProjects extends LitElement {
           <div class="featured-projects__filters-and-sort">
             <div class="featured-projects__filter">
               <button
-                class="btn-toggle-filters"
+                class="btn-toggle-filters focus-visible"
                 aria-label="Afficher les filtres"
                 title="Afficher ou cacher les filtres"
                 @click=${() => {
@@ -74,7 +74,7 @@ export default class FeaturedProjects extends LitElement {
               ${this.showFilters
                 ? html`
                     <button
-                      class="btn ${classMap({
+                      class="btn focus-visible ${classMap({
                         enabledAll: this.enabledAll,
                       })}"
                       aria-label="Filtrer et afficher tous les projets"
@@ -84,7 +84,7 @@ export default class FeaturedProjects extends LitElement {
                       tous
                     </button>
                     <button
-                      class="btn ${classMap({
+                      class="btn focus-visible ${classMap({
                         enabledFrontend: this.enabledFrontend,
                       })}"
                       aria-label="Filtrer et afficher les projets frontend"
@@ -95,7 +95,7 @@ export default class FeaturedProjects extends LitElement {
                       frontend
                     </button>
                     <button
-                      class="btn ${classMap({
+                      class="btn focus-visible ${classMap({
                         enabledWebdesign: this.enabledWebdesign,
                       })}"
                       aria-label="Filtrer et afficher les projets webdesign"
@@ -106,7 +106,7 @@ export default class FeaturedProjects extends LitElement {
                       webdesign
                     </button>
                     <button
-                      class="btn ${classMap({
+                      class="btn focus-visible ${classMap({
                         enabledGestion: this.enabledGestion,
                       })}"
                       aria-label="Filtrer et afficher les projets gestion"
@@ -120,7 +120,7 @@ export default class FeaturedProjects extends LitElement {
                 : null}
             </div>
             <button
-              class="btn-sort"
+              class="btn-sort focus-visible"
               aria-label="Trier les projets par date"
               title="Trier les projets par date"
               @click=${() =>

@@ -28,14 +28,14 @@ export default class Modal extends LitElement {
         <div class="overlay" @click="${this.close}"></div>
         <div class="dialog">
           <button
-            class="dialog__btn"
+            class="dialog__btn focus-visible"
             aria-label="Fermer la modale"
             title="Fermer la modale"
             @click=${this.handleClick}
           >
             <span class="dialog__btn-icon"></span>
           </button>
-          <div class="dialog__content">
+          <div class="dialog__content focus-visible">
             ${this.description != null
               ? html` <p class="dialog__description">${this.description}</p> `
               : null}

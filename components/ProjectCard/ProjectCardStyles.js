@@ -17,7 +17,7 @@ export const componentStyles = css`
   }
 
   .btn--see-more,
-  .tag--primary {
+  .tag--in-progress {
     position: absolute;
     top: 0.8rem;
   }
@@ -26,7 +26,7 @@ export const componentStyles = css`
     left: 0.8rem;
   }
 
-  .tag--primary {
+  .tag--in-progress {
     right: 0.8rem;
   }
 
@@ -167,7 +167,7 @@ export const componentStyles = css`
     display: flex;
     flex-wrap: wrap;
     padding-top: var(--spacing-4);
-    gap: 0.8rem;
+    gap: 0.4rem;
   }
 
   .project-card__tag {

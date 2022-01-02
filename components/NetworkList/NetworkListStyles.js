@@ -14,10 +14,6 @@ export const componentStyles = css`
     }
   }
 
-  .network-list__link {
-    border: solid 2px transparent;
-  }
-
   .network-list__icon {
     display: inline-block;
     background-repeat: no-repeat;

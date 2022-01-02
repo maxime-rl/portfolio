@@ -52,10 +52,10 @@
 }
 
 html[theme="orange"] {
-  --bg-primary: hsl(40, 98%, 44%);
-  --bg-primary-lighten: hsl(41, 100%, 93%);
-  --svg-hover: invert(52%) sepia(97%) saturate(1428%) hue-rotate(11deg)
-    brightness(101%) contrast(98%);
+  --bg-primary: hsl(40, 97%, 40%);
+  --bg-primary-lighten: hsl(42, 100%, 95%);
+  --svg-hover: invert(48%) sepia(82%) saturate(1067%) hue-rotate(14deg)
+    brightness(94%) contrast(98%);
 }
 
 html {
@@ -69,6 +69,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-2);
   color: var(--bg-dark);
-  background: var(--bg-primary-lighten);
+  background-color: var(--bg-primary-lighten);
+  transition: background-color 0.2s;
   scroll-behavior: smooth;
 }
