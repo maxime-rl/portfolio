@@ -6,6 +6,11 @@ export const componentStyles = css`
     padding: var(--spacing-4) 0;
   }
 
+  .infinite-scroll__img.lazy {
+    background-image: none;
+    background-color: #d7d7f2;
+  }
+
   .infinite-scroll__img {
     background: url(./images/icons/tech-banner.svg) repeat-x;
     background-position: center;

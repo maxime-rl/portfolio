@@ -19,4 +19,11 @@ export const componentStyles = css`
     display: flex;
     gap: var(--spacing-3);
   }
+
+  @media screen and (min-width: 75rem) {
+    .navbar__content {
+      display: flex;
+      gap: var(--spacing-4);
+    }
+  }
 `;

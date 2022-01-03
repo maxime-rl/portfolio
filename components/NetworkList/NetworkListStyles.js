@@ -21,11 +21,12 @@ export const componentStyles = css`
     background-size: 2rem;
     width: 2rem;
     height: 2rem;
+    transition: all 0.3s;
   }
 
   .network-list__icon:hover {
     filter: var(--svg-hover);
-    transition: filter 0.2s;
+    transition: all 0.3s;
   }
 
   .network-list__icon--linkedin {

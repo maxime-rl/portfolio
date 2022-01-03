@@ -16,7 +16,7 @@ export const componentStyles = css`
 
   .featured-projects__wrapper {
     display: grid;
-    gap: 1rem;
+    gap: var(--spacing-4);
   }
 
   @media screen and (min-width: 40rem) {
@@ -35,7 +35,7 @@ export const componentStyles = css`
   @media screen and (min-width: 80rem) {
     .featured-projects__wrapper {
       grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
+      gap: var(--spacing-8);
     }
   }
 
