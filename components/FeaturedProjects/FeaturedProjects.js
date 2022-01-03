@@ -74,7 +74,7 @@ export default class FeaturedProjects extends LitElement {
               ${this.showFilters
                 ? html`
                     <button
-                      class="btn focus-visible ${classMap({
+                      class="btn btn-filter focus-visible ${classMap({
                         enabledAll: this.enabledAll,
                       })}"
                       aria-label="Filtrer et afficher tous les projets"
@@ -84,7 +84,7 @@ export default class FeaturedProjects extends LitElement {
                       tous
                     </button>
                     <button
-                      class="btn focus-visible ${classMap({
+                      class="btn btn-filter focus-visible ${classMap({
                         enabledFrontend: this.enabledFrontend,
                       })}"
                       aria-label="Filtrer et afficher les projets frontend"
@@ -95,7 +95,7 @@ export default class FeaturedProjects extends LitElement {
                       frontend
                     </button>
                     <button
-                      class="btn focus-visible ${classMap({
+                      class="btn btn-filter focus-visible ${classMap({
                         enabledWebdesign: this.enabledWebdesign,
                       })}"
                       aria-label="Filtrer et afficher les projets webdesign"
@@ -106,7 +106,7 @@ export default class FeaturedProjects extends LitElement {
                       webdesign
                     </button>
                     <button
-                      class="btn focus-visible ${classMap({
+                      class="btn btn-filter focus-visible ${classMap({
                         enabledGestion: this.enabledGestion,
                       })}"
                       aria-label="Filtrer et afficher les projets gestion"

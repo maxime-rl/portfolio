@@ -21,18 +21,20 @@ export default class ThemeToggle extends LitElement {
 
   render() {
     return html`
-      <input
-        type="checkbox"
-        id="themeToggle"
-        class="theme-toggle-input"
-        tabindex="0"
-        @change=${() => this.toggleTheme()}
-      />
-      <label for="themeToggle" class="sr-only">Choix du thème</label>
-      <div class="theme-toggle-slider"></div>
-      <div class="theme-toggle-colors">
-        <span class="theme-toggle-blue"></span>
-        <span class="theme-toggle-orange"></span>
+      <div class="theme-toggle">
+        <input
+          type="checkbox"
+          id="themeToggle"
+          class="theme-toggle__input"
+          tabindex="0"
+          @change=${() => this.toggleTheme()}
+        />
+        <label for="themeToggle" class="sr-only">Choix du thème</label>
+        <div class="theme-toggle__slider"></div>
+        <div class="theme-toggle__colors">
+          <span class="theme-toggle__blue"></span>
+          <span class="theme-toggle__orange"></span>
+        </div>
       </div>
     `;
   }

@@ -24,7 +24,7 @@ export const componentStyles = css`
     background-image: url(./images/icons/arrow.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 2rem;
+    background-size: contain;
     width: 2rem;
     height: 2rem;
   }
