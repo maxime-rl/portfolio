@@ -1,7 +1,7 @@
 import { LitElement, html } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 import { componentStyles } from "./ModalStyles";
-import { sharedStyles } from "../../helpers";
+import { sharedStyles } from "../../utils";
 
 /**
  * @name Modal

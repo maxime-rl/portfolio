@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./NavbarStyles";
-import { sharedStyles } from "../../helpers";
+import { sharedStyles } from "../../utils";
 
 /**
  * @name Nav

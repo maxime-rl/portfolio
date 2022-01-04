@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./FooterStyles";
-import { sharedStyles } from "../../helpers";
+import { sharedStyles } from "../../utils";
 
 /**
  * @name Footer

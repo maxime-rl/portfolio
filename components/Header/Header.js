@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./HeaderStyles";
-import { sharedStyles, keyframesStyles } from "../../helpers";
+import { sharedStyles, keyframesStyles } from "../../utils";
 
 /**
  * @name Header
