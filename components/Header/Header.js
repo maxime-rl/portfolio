@@ -21,9 +21,9 @@ export default class Header extends LitElement {
           </h1>
           <img 
             class="header__img" 
-            src="./images/profile-photo.png" 
+            src="./images/profile-photo.webp" 
             alt="Portrait de face en plan buste sur fond blanc, tee-shirt orange et lunettes de vue noir" 
-            width="1000" height="450">
+            width="400" height="375">
           </img>
         </div>
       </header>

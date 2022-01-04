@@ -33,7 +33,6 @@ export const componentStyles = css`
 
   .project-card__img {
     grid-area: image;
-    border-radius: var(--radius-2) var(--radius-2) 0 0;
   }
 
   .project-card__title {
