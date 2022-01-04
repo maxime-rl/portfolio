@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./ThemeToggleStyles";
-import { sharedStyles } from "../../helpers";
+import { sharedStyles } from "../../utils";
 
 export default class ThemeToggle extends LitElement {
   static properties = {

@@ -28,11 +28,11 @@ export const componentStyles = css`
 
   .tag--in-progress {
     right: 0.8rem;
+    font-weight: 400;
   }
 
   .project-card__img {
     grid-area: image;
-    border-radius: var(--radius-2) var(--radius-2) 0 0;
   }
 
   .project-card__title {
@@ -159,6 +159,12 @@ export const componentStyles = css`
   .project-card__description {
     grid-area: description;
     margin: var(--spacing-2) 0;
+    height: 2.5rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
     font-weight: 300;
   }
 

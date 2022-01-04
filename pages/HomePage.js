@@ -1,5 +1,5 @@
 import { LitElement, html } from "lit";
-import { sharedStyles } from "../helpers/styles/sharedStyles";
+import { sharedStyles } from "../utils/styles/sharedStyles";
 
 /**
  * @name HomePage

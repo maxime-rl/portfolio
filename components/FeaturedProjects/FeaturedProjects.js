@@ -1,7 +1,7 @@
 import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 import { componentStyles } from "./FeaturedProjectsStyles";
-import { sharedStyles, btnStyles } from "../../helpers";
+import { sharedStyles, btnStyles } from "../../utils";
 
 import data from "../../assets/data.json";
 

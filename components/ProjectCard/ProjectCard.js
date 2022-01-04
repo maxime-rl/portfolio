@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import { componentStyles } from "./ProjectCardStyles";
-import { sharedStyles, btnStyles, tagStyles } from "../../helpers";
+import { sharedStyles, btnStyles, tagStyles } from "../../utils";
 
 /**
  * @name ProjectCard
