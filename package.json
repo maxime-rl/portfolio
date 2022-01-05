@@ -13,8 +13,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "lit": "^2.0.2",
     "prettier": "^2.5.1",
     "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "lit": "^2.0.2"
   }
 }
