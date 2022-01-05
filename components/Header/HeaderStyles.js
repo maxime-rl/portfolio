@@ -18,53 +18,40 @@ export const componentStyles = css`
     right: -49px;
     bottom: 16px;
     margin-top: -5rem;
-    width: 62%;
+    max-width: 13rem;
     height: auto;
     border-radius: var(--radius-2);
     animation: opacity 1.5s ease;
   }
 
-  @media screen and (min-width: 25rem) {
+  @media screen and (min-width: 30rem) {
     .header__img {
-      width: 55%;
+      max-width: 15rem;
     }
   }
 
-  @media screen and (min-width: 30rem) {
+  @media screen and (min-width: 40rem) {
     .header__img {
-      width: 50%;
-    }
-  }
-
-  @media screen and (min-width: 30rem) {
-    .header__img {
-      width: 45%;
+      max-width: 17rem;
     }
   }
 
   @media screen and (min-width: 50rem) {
     .header__img {
-      width: 40%;
-    }
-  }
-
-  @media screen and (min-width: 50rem) {
-    .header__img {
-      width: 35%;
+      max-width: 19rem;
     }
   }
 
   @media screen and (min-width: 65rem) {
     .header__img {
-      width: 35%;
+      max-width: 21rem;
     }
   }
 
   @media screen and (min-width: 80rem) {
     .header__img {
-      right: 30px;
+      right: var(--spacing-8);
       bottom: 0;
-      width: 30%;
     }
   }
 
