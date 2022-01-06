@@ -16,9 +16,12 @@ Site développé en Javascript, à l'aide de légers composants web proposés pa
 - [NodeJS (version 12++)](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/)
 
-### devDependencies
+### Dependencies
 
 - [lit](https://lit.dev/docs/getting-started/)
+
+### devDependencies
+
 - [vite](https://vitejs.dev/guide/)
 - [prettier](https://prettier.io/docs/en/index.html)
 
