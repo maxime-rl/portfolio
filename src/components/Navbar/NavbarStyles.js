@@ -16,7 +16,9 @@ export const componentStyles = css`
   }
 
   .navbar__content {
+    position: relative;
     display: flex;
+    left: var(--spacing-2);
     gap: var(--spacing-3);
   }
 

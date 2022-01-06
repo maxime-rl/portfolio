@@ -6,7 +6,7 @@ export const componentStyles = css`
     padding: var(--spacing-4) 0;
   }
 
-  .infinite-scroll__img.lazy {
+  .infinite-scroll__img {
     background-image: none;
     background-color: #d7d7f2;
   }
