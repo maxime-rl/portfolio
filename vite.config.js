@@ -10,7 +10,6 @@ export default defineConfig({
     },
     manifest: true,
     rollupOptions: {
-      external: /^lit/,
       input: {
         main: resolve(__dirname, "index.html"),
       },
