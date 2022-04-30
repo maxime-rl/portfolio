@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "id": "uh-PX6xwCO",
+      "name": "Blog template",
+      "date": "2022-05-06",
+      "tags": ["frontend", "next", "js", "contentful", "webhook"],
+      "shortDescription": "Petite base de blog avec champs personnalisés et action de rappel.",
+      "description": null,
+      "thumbnail": "blog-template-project.webp",
+      "alt": "Grille de six articles du template de blog",
+      "medias": null,
+      "links": {
+        "github": "https://github.com/maxime-rl/simple_blog_template",
+        "preview": "https://simple-blog-template-xi.vercel.app"
+      }
+    },
+    {
       "id": "hiNX6xwt-Y",
       "name": "Portfolio",
       "date": "2022-01-15",
